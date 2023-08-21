@@ -122,7 +122,7 @@ export default function Home() {
             <div className='shadow-lg  flex flex-col bg-violet-500 p-6 rounded-xl text-white'>
               <div className='text-3xl'>Dates</div>
               <div className='text-xl w-3/4'>Dead Line for submitting the short video of maximum of 3 minutes at ablest@sastra.ac.in , is
-                20th Sep 2023</div>
+                <span className='font-bold'> 20th Sep 2023</span></div>
             </div>
             <div className='md:w-1/4 relative top-8'>
               <Image className='w-48 md:64' src={dl} />
