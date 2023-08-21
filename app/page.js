@@ -29,7 +29,7 @@ export default function Home() {
 
 
 
-          <ul className={`top-16 transition-all ease-in font-bold border-x-2 border-b-2 md:border-none border-orange-300 duration-300 ${open ? 'opacity-0 md:opacity-100' : ''} bg-orange-100   md:py-0 pt-4 pl-7 md:pl-0 w-full md:w-auto left-0 md:flex flex-row md:items-center  z-[-1] md:z-auto md:static absolute md:bg-transparent`}>
+          <ul className={`top-16 transition-all ease-in font-bold border-x-2 border-b-2 md:border-none border-orange-300 duration-300 ${open ? 'opacity-0 md:opacity-100' : ''} bg-orange-100   md:py-0 pt-4 pl-2 md:pl-0 w-full md:w-auto left-0 md:flex flex-row md:items-center  z-[-1] md:z-auto md:static absolute md:bg-transparent`}>
             <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#about'>About</a></li>
             <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#eligible'>Eligibility</a></li>
             <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#idea'>Idea/Themes</a></li>
@@ -116,7 +116,7 @@ export default function Home() {
         {/* dates awards */}
 
 
-        <div id='awa' className='flex flex-col mt-12 justify-center items-center space-y-12 pb-12  md:m-0 bg-gradient-to-tl from-amber-300'>
+        <div id='awa' className='flex flex-col justify-center items-center space-y-12 pb-12  md:m-0 bg-gradient-to-tl from-amber-300'>
           <div className='text-center text-4xl mt-12 font-bold'>Dates And Awards</div>
           <div className=' flex flex-col-reverse md:flex-row p-2 md:px-12 justify-center items-center md:w-3/5 '>
             <div className='shadow-lg  flex flex-col bg-violet-500 p-6 rounded-xl text-white'>
