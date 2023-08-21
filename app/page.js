@@ -157,7 +157,7 @@ export default function Home() {
         <div className="h-1 bg-gray-700"></div>
         <div className="flex flex-col justify-center items-center bg-gray-800 text-gray-400 p-8 md:pl-40 md:pr-40">
           <div>MADE BY <a href='https://ecellsastra.org' className='font-bold' target='_main'>TECH-E</a></div>
-          <div><a href='https://ecellsastra.org' className='font-bold' target='_main'>&copy; E-cell SASTRA</a>.All Rights Reserved 2023 </div>
+          <div className='text-center'><a href='https://ecellsastra.org' className='font-bold' target='_main'>&copy; E-cell SASTRA</a>.All Rights Reserved 2023 </div>
 
         </div>
 
