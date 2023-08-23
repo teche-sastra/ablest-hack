@@ -132,9 +132,9 @@ Top Two Teams will each receive a prize of<b> Rs. 25000</b> from<b> Janonam Natu
         <div id='idea' className='abi_bhu pt-8 bg-gradient-to-bl from-rose-200 flex space-y-4 flex-col justify-center items-center md:pb-12 pb-8  px-2'>
           <div className='text-4xl font-bold flex flex-row'><span>Ideas</span> <Image className='w-16' src={idea} /></div>
           <div className='flex flex-col justify-center items-center space-y-2 md:w-3/4 rounded-lg shadow-md p-8 bg-violet-500 text-white'>
-            <div className='text-2xl w-full text-left md:ml-32 font-bold'> 1.“30 different plants a week” challenge :</div>
+            <div className='text-2xl w-full text-left md:ml-32 font-bold'> 1.“30 different plants a week” challenge-Balancing millets: :</div>
             <div className='md:w-4/5 text-xl'>
-              Balancing millets:<br></br> a. Design an ideal meal (with no anti-nutrients) with at least 30 different plants (plant parts) & millets (compulsorily at least 3) to meet 50% of recommended RDA (Recommended Daily Allowances of nutrients) for Indian adults.<br></br> b. Offer convenience in consumption that should be ready to eat or ready to drink – straight out of the box / can – without any cooking/ heating etc.<br></br> c. Enable versatile culinary profile to prepare a wide range of dishes and snacks. Embracing millets in modern diets that appeal to modern tastes and dietary preferences.</div>
+               a. Design an ideal meal (with no anti-nutrients) with at least 30 different plants (plant parts) & millets (compulsorily at least 3) to meet 50% of recommended RDA (Recommended Daily Allowances of nutrients) for Indian adults.<br></br> b. Offer convenience in consumption that should be ready to eat or ready to drink – straight out of the box / can – without any cooking/ heating etc.<br></br> c. Enable versatile culinary profile to prepare a wide range of dishes and snacks. Embracing millets in modern diets that appeal to modern tastes and dietary preferences.</div>
           </div>
           <div className='flex flex-col justify-center items-center space-y-2 md:w-3/4 rounded-lg shadow-md p-8 bg-green-500 text-white'>
             <div className='text-2xl w-full text-left md:ml-32 font-bold'> 2. Design Food-Ink cartridge & food printer for Jananom’s vegan Nutrimix :</div>
