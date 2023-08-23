@@ -33,7 +33,7 @@ export default function Home() {
 
 
 
-          <ul className={`top-36 transition-all ease-in font-bold border-x-2 border-b-2 md:border-none border-orange-300 duration-300 ${open ? 'opacity-0 md:opacity-100' : ''} bg-orange-100   md:py-0 pt-4 pl-2 md:pl-0 w-full md:w-auto left-0 md:flex flex-row md:items-center  z-[-1] md:z-auto md:static absolute md:bg-transparent`}>
+          <ul className={`top-[16vh] transition-all ease-in font-bold border-x-2 border-b-2 md:border-none border-orange-300 duration-300 ${open ? 'opacity-0 md:opacity-100' : ''} bg-orange-100   md:py-0 pt-4 pl-2 md:pl-0 w-full md:w-auto left-0 md:flex flex-row md:items-center  z-[-1] md:z-auto md:static absolute md:bg-transparent`}>
             {/* <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#about'>About</a></li> */}
             {/* <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#eligible'>Eligibility</a></li> */}
             <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#details'>Details</a></li>
@@ -91,37 +91,44 @@ export default function Home() {
         </div> */}
         
         {/* details */}
-        <div className='details h-[150vh] lg:h-[60vh] relative'>
+        <div className='details h-[180vh] lg:h-[60vh] relative'>
           <div className='cardcontain flex lg:flex-row flex-col justify-center items-center gap-24 lg:gap-6'>
             <div className='card -mt-[10vh] pt-6 pl-4 pr-6 relative bg-slate-200/90 transition-transform rounded-xl hover:scale-105 hover:shadow-2xl  h-[55vh] w-[80vw] lg:w-[25vw]'>
                 {/* <div className="blur w-full h-full absolute top-0 bg-white"></div> */}
                 <div className="image mb-4 h-[20vh] w-full grid place-items-center">
                 <Image src={el} className='h-[20vh] w-[25vh]'/>
                 </div>
-                <div className='heading  font-bold space text-3xl mb-6'>Eligibility</div>
-                <div className='content text-xl'>Students, Research Scholars, Faculties & Innovators</div>
+                <div className='heading  font-bold space text-3xl mb-6 text-center'>Eligibility</div>
+                <div className='content text-xl'>
+                  <ul className='list-disc pl-6'>
+                    <li>Students</li>
+                    <li>Research Scholars</li>
+                    <li>Faculties</li>
+                    <li>Innovators</li>
+                  </ul>
+                  </div>
             </div>
-            <div className='card -mt-[10vh] pt-6 pl-4 pr-6 bg-gray-200/90  transition-transform rounded-xl hover:scale-105 hover:shadow-2xl h-[55vh] w-[80vw] lg:w-[25vw]'>
+            <div className='card text-center -mt-[10vh] pt-6 pl-4 pr-6 bg-gray-200/90  transition-transform rounded-xl hover:scale-105 hover:shadow-2xl h-[55vh] w-[80vw] lg:w-[25vw]'>
                 <div className="image mb-4 h-[20vh] w-full grid place-items-center">
                 <Image src={dl} className='h-[20vh] w-[25vh]'/>
                 </div>
-                <div className='heading  font-bold space text-3xl mb-6'>Dates</div>
+                <div className='heading  font-bold space text-3xl mb-6 text-center'>Dates</div>
                 <div className='content text-xl'>Send a short video <b>3mins (max)</b> to <b>ablest@sastra.ac.in</b> by <b>20th sep 2023</b></div>
             </div>
-            <div className='card -mt-[10vh] pt-6 pl-4 pr-6 bg-gray-200/90  transition-transform rounded-xl hover:scale-105 hover:shadow-2xl h-[55vh] w-[80vw] lg:w-[25vw]'>
+            <div className='card text-center -mt-[10vh] pt-6 pl-4 pr-6 bg-gray-200/90  transition-transform rounded-xl hover:scale-105 hover:shadow-2xl h-[55vh] w-[80vw] lg:w-[25vw]'>
                 <div className="image mb-4 h-[20vh] w-full grid place-items-center">
                 <Image src={star} className='h-[20vh] w-[25vh]'/>
                 </div>
-                <div className='heading  font-bold space text-3xl mb-6'>Awards</div>
+                <div className='heading  font-bold space text-3xl mb-6 text-center'>Awards</div>
                 <div className='content text-xl'>2 ideas will be awarded <b>Rs. 25000</b> each by <b>Janonam Natural Nutrition</b></div>
             </div>
           </div>
-          <div className="bg-orange-400 h-[150vh] lg:h-[60vh] w-full absolute -z-10 bottom-0 left-0 pb-82"></div>
+          <div className="bg-orange-400 h-[180vh] lg:h-[60vh] w-full absolute -z-10 bottom-0 left-0 pb-82"></div>
         </div>
 
 
         {/* ideas */}
-        <div id='idea' className='pt-36 lg:pt-8 bg-gradient-to-bl from-rose-200 flex space-y-4 flex-col justify-center items-center md:pb-12 pb-8  px-2'>
+        <div id='idea' className='pt-8 bg-gradient-to-bl from-rose-200 flex space-y-4 flex-col justify-center items-center md:pb-12 pb-8  px-2'>
           <div className='text-4xl font-bold flex flex-row'><span>Ideas</span> <Image className='w-16' src={idea} /></div>
           <div className='flex flex-col justify-center items-center space-y-2 md:w-3/4 rounded-lg shadow-md p-8 bg-violet-500 text-white'>
             <div className='text-2xl font-bold'> 1.“30 different plants a week” challenge :</div>
