@@ -1,7 +1,4 @@
 'use client'
-import { Ubuntu,Tilt_Prism } from '@next/font/google'
-const ubuntu=Ubuntu({subsets:['latin'],weight:['400']})
-
 import Image from 'next/image'
 import ham from '../images/ham.png'
 import dd from '../images/dd.jpeg'
@@ -40,7 +37,7 @@ export default function Home() {
             {/* <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#about'>About</a></li> */}
             {/* <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#eligible'>Eligibility</a></li> */}
             <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#details'>Details</a></li>
-            <li className="mx-4 md:my-0 my-6 pb-2  md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#idea'>Idea/Themes</a></li>
+            <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#idea'>Idea/Themes</a></li>
             {/* <li className="mx-4 md:my-0 my-2 pb-2  md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#awa'>Date/Awards</a></li> */}
 
 
@@ -51,12 +48,12 @@ export default function Home() {
 
         {/* hero */}
 
-        <div className={`${ubuntu.className}flex justify-center item-center flex-col sm:px-4 md:pt-8 md:px-12 pt-6 bg-gradient-to-tr from-orange-200 h-[80vh] md:h-[84vh]`}>
+        <div className=' abi_bhu flex justify-center item-center flex-col sm:px-4 md:pt-8 md:px-12 pt-6 bg-gradient-to-tr from-orange-200 h-[80vh] md:h-[84vh]'>
           <div className='flex md:flex-row flex-col justify-center items-center '>
             <div className='md:w-1/3 flex flex-col space-y-4 md:space-y-6 '>
               <div className='md:text-4xl md:text-left text-center lg:text-3xl 2xl:text-7xl xl:text-5xl text-4xl md:ml-0 ml-4 font-bold '>Nutrition Hackathon <br></br> 2023</div>
-              <div className='md:text-xl  lg:text-2xl 2xl:text-4xl text-2xl text-center md:text-left md:ml-0 ml-4'>Seeking creative theme-oriented ideas from creators throughout india</div>
-              <div className='md:py-2 py-2 md:ml-0 ml- flex md:justify-start justify-center'>
+              <div className='md:text-xl  lg:text-2xl 2xl:text-4xl text-2xl text-center md:text-left md:ml-0 ml-4'>Seeking creative theme-oriented ideas from creators throughout India</div>
+              <div className='md:py-4  py-4 md:ml-0 ml- flex md:justify-start justify-center'>
                 <button className='px-4 md:px-6 lg:px-8 p-2 rounded-3xl flex text-xl md:text-xl flex-row justify-center items-center space-x-2 hover:bg-orange-300 bg-orange-400'><span><a id='details' href='https://docs.google.com/forms/d/e/1FAIpQLSeVsVsw2P336oIxawTvst0Gkazk0q82MBergJymdz9_8qZOZA/viewform' target='_main'>Register</a></span> <Image className='w-4' src={arrow} /></button>
               </div>
             </div>
@@ -94,7 +91,7 @@ export default function Home() {
         </div> */}
         
         {/* details */}
-        <div className={`${ubuntu.className}details h-[180vh] lg:h-[60vh] relative`}>
+        <div className='  abi_bhu details h-[180vh] lg:h-[60vh] relative'>
           <div className='cardcontain flex lg:flex-row flex-col justify-center items-center gap-24 lg:gap-6'>
             <div className='card -mt-[10vh] pt-6 pl-4 pr-6 relative bg-slate-200/90 transition-transform rounded-xl hover:scale-105 hover:shadow-2xl  h-[55vh] w-[80vw] lg:w-[25vw]'>
                 {/* <div className="blur w-full h-full absolute top-0 bg-white"></div> */}
@@ -131,7 +128,7 @@ export default function Home() {
 
 
         {/* ideas */}
-        <div id='idea' className='pt-8 bg-gradient-to-bl from-rose-200 flex space-y-4 flex-col justify-center items-center md:pb-12 pb-8  px-2'>
+        <div id='idea' className='abi_bhu pt-8 bg-gradient-to-bl from-rose-200 flex space-y-4 flex-col justify-center items-center md:pb-12 pb-8  px-2'>
           <div className='text-4xl font-bold flex flex-row'><span>Ideas</span> <Image className='w-16' src={idea} /></div>
           <div className='flex flex-col justify-center items-center space-y-2 md:w-3/4 rounded-lg shadow-md p-8 bg-violet-500 text-white'>
             <div className='text-2xl font-bold'> 1.“30 different plants a week” challenge :</div>
@@ -181,7 +178,7 @@ export default function Home() {
 
 
         {/* footer */}
-        <div className="pb-16  bg-gray-800 pt-8 ">
+        <div className="abi_bhu pb-16  bg-gray-800 pt-8 ">
           <div className='text-2xl m-4 text-center text-gray-400'>Our Sponsors</div>
           <div className='flex md:flex-row flex-col flex-wrap justify-evenly items-center space-y-4 p-4'>
             <Image className='h-24' src={jana} />
