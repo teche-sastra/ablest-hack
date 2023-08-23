@@ -33,7 +33,7 @@ export default function Home() {
 
 
 
-          <ul className={`top-[16vh] transition-all ease-in font-bold border-x-2 border-b-2 md:border-none border-orange-300 duration-300 ${open ? 'opacity-0 md:opacity-100' : ''} bg-orange-100   md:py-0 pt-4 pl-2 md:pl-0 w-full md:w-auto left-0 md:flex flex-row md:items-center  z-[-1] md:z-auto md:static absolute md:bg-transparent`}>
+          <ul className={`top-[20vh] transition-all ease-in font-bold border-x-2 border-b-2 md:border-none border-orange-300 duration-300 ${open ? 'opacity-0 md:opacity-100' : ''} bg-orange-100   md:py-0 pt-4 pl-2 md:pl-0 w-full md:w-auto left-0 md:flex flex-row md:items-center  z-[-1] md:z-auto md:static absolute md:bg-transparent`}>
             {/* <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#about'>About</a></li> */}
             {/* <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#eligible'>Eligibility</a></li> */}
             <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#details'>Details</a></li>
@@ -48,7 +48,7 @@ export default function Home() {
 
         {/* hero */}
 
-        <div className='flex  justify-center item-center flex-col sm:px-4 md:pt-8 md:px-12 pt-6 bg-gradient-to-tr from-orange-200 h-[80vh] md:h-[84vh]'>
+        <div className='fo flex justify-center item-center flex-col sm:px-4 md:pt-8 md:px-12 pt-6 bg-gradient-to-tr from-orange-200 h-[80vh] md:h-[84vh]'>
           <div className='flex md:flex-row flex-col justify-center items-center '>
             <div className='md:w-1/3 flex flex-col space-y-4 md:space-y-6 '>
               <div className='md:text-4xl md:text-left text-center lg:text-3xl 2xl:text-7xl xl:text-5xl text-4xl md:ml-0 ml-4 font-bold '>Nutrition Hackathon <br></br> 2023</div>
@@ -190,7 +190,7 @@ export default function Home() {
         <div className="h-1 bg-gray-700"></div>
         <div className="flex flex-col justify-center items-center bg-gray-800 text-gray-400 p-8 md:pl-40 md:pr-40">
           <div>MADE BY <a href='https://ecellsastra.org' className='font-bold' target='_main'>TECH-E</a></div>
-          <div className='text-center'><a href='https://ecellsastra.org' className='font-bold' target='_main'>&copy; E-cell SASTRA</a>.All Rights Reserved 2023 </div>
+          <div className='text-center'><a href='https://ecellsastra.org' className='font-bold' target='_main'>&copy; E-Cell SASTRA</a>.All Rights Reserved 2023 </div>
 
         </div>
 
