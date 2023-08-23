@@ -24,16 +24,17 @@ export default function Home() {
       <div className='font-sans scroll-smooth'>
         <nav className="bg-white shadow-md p-4 s md:flex flex-row justify-between items-center relative z-0 sm:[20vh] md:h-[16vh]">
           <div className="flex flex-row justify-between">
-            <div className='images grid w-60 md:flex lg:w-80 md:w-60'>
+            <div className='images  w-72 md:flex lg:w-80 md:w-60'>
               <Image className='md:w-36' src={sas} />
               <Image className='' src={tbi} />
+              <Image className='hidden lg:flex lg:w-36' src={jana} />
             </div>
             <span className="md:hidden block cursor-pointer"><button onClick={() => setopen(!open)}  ><Image className="w-8" src={ham} /></button></span>
           </div>
 
 
 
-          <ul className={`top-[20vh] transition-all ease-in font-bold border-x-2 border-b-2 md:border-none border-orange-300 duration-300 ${open ? 'opacity-0 md:opacity-100' : ''} bg-orange-100   md:py-0 pt-4 pl-2 md:pl-0 w-full md:w-auto left-0 md:flex flex-row md:items-center  z-[-1] md:z-auto md:static absolute md:bg-transparent`}>
+          <ul className={`top-[20vh] transition-all mt-4 ease-in font-bold border-x-2 border-b-2 md:border-none border-orange-300 duration-300 ${open ? 'opacity-0 md:opacity-100' : ''} bg-orange-200   md:py-0 pt-4 pl-2 md:pl-0 w-full md:w-auto left-0 md:flex flex-row md:items-center  z-[-1] md:z-auto md:static absolute md:bg-transparent`}>
             {/* <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#about'>About</a></li> */}
             {/* <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#eligible'>Eligibility</a></li> */}
             <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#details'>Details</a></li>
@@ -101,10 +102,10 @@ export default function Home() {
                 <div className='heading  font-bold space text-3xl mb-6 text-center'>Eligibility</div>
                 <div className='content text-xl'>
                   <ul className='list-disc pl-6'>
-                    <li>Students</li>
-                    <li>Research Scholars</li>
-                    <li>Faculties</li>
-                    <li>Innovators</li>
+                    <li>👨Students</li>
+                    <li>👨‍🎓Research Scholars</li>
+                    <li>👨‍🏫Faculties</li>
+                    <li>🛠️Innovators</li>
                   </ul>
                   </div>
             </div>
@@ -113,7 +114,15 @@ export default function Home() {
                 <Image src={dl} className='h-[20vh] w-[25vh]'/>
                 </div>
                 <div className='heading  font-bold space text-3xl mb-6 text-center'>Instructions</div>
-                <div className='text-xl'>Registration is mandatory for participation.Each team should have a maximum of 4 members.Send us a video of up to <b>3 minutes</b> in length on or before <b>September 20, 2023</b> .Results will be announced shortly after the evaluation.</div>
+                 <div className='content text-xl'>
+                  <ul className=' list-disc text-left pl-6'>
+                    <li>📜Registration is mandatory</li>
+                    <li>🧑‍🤝‍🧑Max 4 members per team</li>
+                    <li>🎥Max video length 3 mins</li>
+                    <li>📆Deadline- 20th Sep 2023</li>
+                    <li>📧Submit at <b>ablest@sastra.ac.in</b></li>
+                  </ul>
+                  </div>
             </div>
             <div className='card text-center -mt-[10vh] pt-6 pl-4 pr-6 pb-2 bg-gray-200/90  transition-transform rounded-xl hover:scale-105 lg:h-[65vh] hover:shadow-2xl h-auto md:h-[55vh] w-[80vw] lg:w-[25vw]'>
                 <div className="image mb-4 h-[20vh] w-full grid place-items-center">
@@ -132,19 +141,37 @@ Top Two Teams will each receive a prize of<b> Rs. 25000</b> from<b> Janonam Natu
         <div id='idea' className='abi_bhu pt-8 bg-gradient-to-bl from-rose-200 flex space-y-4 flex-col justify-center items-center md:pb-12 pb-8  px-2'>
           <div className='text-4xl font-bold flex flex-row'><span>Ideas</span> <Image className='w-16' src={idea} /></div>
           <div className='flex flex-col justify-center items-center space-y-2 md:w-3/4 rounded-lg shadow-md p-8 bg-violet-500 text-white'>
-            <div className='text-2xl w-full text-left md:ml-32 font-bold'> 1.“30 different plants a week” challenge-Balancing millets: :</div>
+            <div className='text-2xl w-full text-left md:ml-32 font-bold'> 1.“30 different plants a week” challenge-Balancing millets :   </div>
             <div className='md:w-4/5 text-xl'>
-               a. Design an ideal meal (with no anti-nutrients) with at least 30 different plants (plant parts) & millets (compulsorily at least 3) to meet 50% of recommended RDA (Recommended Daily Allowances of nutrients) for Indian adults.<br></br> b. Offer convenience in consumption that should be ready to eat or ready to drink – straight out of the box / can – without any cooking/ heating etc.<br></br> c. Enable versatile culinary profile to prepare a wide range of dishes and snacks. Embracing millets in modern diets that appeal to modern tastes and dietary preferences.</div>
+              <ul className='list-disc'>
+                <li>Design an ideal meal (with no anti-nutrients) with at least 30 different plants (plant parts) & millets (compulsorily at least 3) to meet 50% of recommended RDA (Recommended Daily Allowances of nutrients) for Indian adults</li>
+                <li>Offer convenience in consumption that should be ready to eat or ready to drink – straight out of the box / can – without any cooking/ heating etc</li>
+                <li>Enable versatile culinary profile to prepare a wide range of dishes and snacks. Embracing millets in modern diets that appeal to modern tastes and dietary preferences</li>
+              </ul>
+               {/* a. Design an ideal meal (with no anti-nutrients) with at least 30 different plants (plant parts) & millets (compulsorily at least 3) to meet 50% of recommended RDA (Recommended Daily Allowances of nutrients) for Indian adults.<br></br> b. Offer convenience in consumption that should be ready to eat or ready to drink – straight out of the box / can – without any cooking/ heating etc.<br></br> c. Enable versatile culinary profile to prepare a wide range of dishes and snacks. Embracing millets in modern diets that appeal to modern tastes and dietary preferences. */}
+               </div>
           </div>
           <div className='flex flex-col justify-center items-center space-y-2 md:w-3/4 rounded-lg shadow-md p-8 bg-green-500 text-white'>
             <div className='text-2xl w-full text-left md:ml-32 font-bold'> 2. Design Food-Ink cartridge & food printer for Jananom’s vegan Nutrimix :</div>
             <div className='md:w-4/5 text-xl'>
-              a. Formulate it suitably for flowing characteristics & rheology for printing.<br></br> b. Able to customize food design on the printer – from a mobile app / website.<br></br> c. Total printing time not to exceed 180 minutes per dish.</div>
+              <ul className='list-disc'>
+                <li>Formulate it suitably for flowing characteristics & rheology for printing</li>
+                <li>Able to customize food design on the printer – from a mobile app / website</li>
+                <li>Total printing time not to exceed 180 minutes per dish</li>
+              </ul>
+              {/* a. Formulate it suitably for flowing characteristics & rheology for printing.<br></br> b. Able to customize food design on the printer – from a mobile app / website.<br></br> c. Total printing time not to exceed 180 minutes per dish. */}
+              </div>
           </div>
           <div className='flex flex-col justify-center items-center space-y-2 md:w-3/4 rounded-lg shadow-md p-8 bg-orange-400 text-white'>
             <div className='text-2xl w-full text-left md:ml-32 font-bold'>3. Gut-brain hack for yogic meal :</div>
             <div className='md:w-4/5 text-xl'>
-              a. As per Indian traditional system, there are certain recommended diets that support gut-brain axis for those who want to do meditation and do tasks that involve mental focus. Design such a diet.<br></br> b. Should meet atleast 20% of RDA<br></br> c. Should involve minimal cooking.</div>
+              <ul className='list-disc'>
+                  <li>As per Indian traditional system, there are certain recommended diets that support gut-brain axis for those who want to do meditation and do tasks that involve mental focus. Design such a diet</li>
+                  <li>Should meet atleast 20% of RDA</li>
+                  <li>Should involve minimal cooking</li>
+              </ul>
+              {/* a. As per Indian traditional system, there are certain recommended diets that support gut-brain axis for those who want to do meditation and do tasks that involve mental focus. Design such a diet.<br></br> b. Should meet atleast 20% of RDA<br></br> c. Should involve minimal cooking.\ */}
+              </div>
           </div>
         </div>
 
