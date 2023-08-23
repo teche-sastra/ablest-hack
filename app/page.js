@@ -91,9 +91,9 @@ export default function Home() {
         </div> */}
         
         {/* details */}
-        <div className='  abi_bhu details h-[180vh] lg:h-[60vh] relative'>
+        <div className='details h-[180vh] lg:h-[60vh] relative'>
           <div className='cardcontain flex lg:flex-row flex-col justify-center items-center gap-24 lg:gap-6'>
-            <div className='card -mt-[10vh] pt-6 pl-4 pr-6 relative bg-slate-200/90 transition-transform rounded-xl hover:scale-105 hover:shadow-2xl  h-[55vh] w-[80vw] lg:w-[25vw]'>
+            <div className='card -mt-[10vh] pt-6 pl-4 pr-6 relative bg-slate-200/90 transition-transform rounded-xl hover:scale-105 hover:shadow-2xl h-auto lg:h-[65vh] md:h-[55vh] w-[80vw] lg:w-[25vw]'>
                 {/* <div className="blur w-full h-full absolute top-0 bg-white"></div> */}
                 <div className="image mb-4 h-[20vh] w-full grid place-items-center">
                 <Image src={el} className='h-[20vh] w-[25vh]'/>
@@ -108,19 +108,20 @@ export default function Home() {
                   </ul>
                   </div>
             </div>
-            <div className='card text-center -mt-[10vh] pt-6 pl-4 pr-6 bg-gray-200/90  transition-transform rounded-xl hover:scale-105 hover:shadow-2xl h-[55vh] w-[80vw] lg:w-[25vw]'>
+            <div className='card text-center -mt-[10vh] pt-6 pl-4 pr-6 bg-gray-200/90  transition-transform rounded-xl hover:scale-105 overflow-y-auto  lg:h-[65vh] hover:shadow-2xl h-auto md:h-[55vh] w-[80vw] lg:w-[25vw]'>
                 <div className="image mb-4 h-[20vh] w-full grid place-items-center">
                 <Image src={dl} className='h-[20vh] w-[25vh]'/>
                 </div>
-                <div className='heading  font-bold space text-3xl mb-6 text-center'>Dates</div>
-                <div className='content text-xl'>Send a short video <b>3mins (max)</b> to <b>ablest@sastra.ac.in</b> by <b>20th sep 2023</b></div>
+                <div className='heading  font-bold space text-3xl mb-6 text-center'>Instructions</div>
+                <div className='text-xl'>Registration is mandatory for participation.Each team should have a maximum of 4 members.Send us a video of up to <b>3 minutes</b> in length on or before <b>September 20, 2023</b> .Results will be announced shortly after the evaluation.</div>
             </div>
-            <div className='card text-center -mt-[10vh] pt-6 pl-4 pr-6 bg-gray-200/90  transition-transform rounded-xl hover:scale-105 hover:shadow-2xl h-[55vh] w-[80vw] lg:w-[25vw]'>
+            <div className='card text-center -mt-[10vh] pt-6 pl-4 pr-6 bg-gray-200/90  transition-transform rounded-xl hover:scale-105 lg:h-[65vh] hover:shadow-2xl h-auto md:h-[55vh] w-[80vw] lg:w-[25vw]'>
                 <div className="image mb-4 h-[20vh] w-full grid place-items-center">
                 <Image src={star} className='h-[20vh] w-[25vh]'/>
                 </div>
                 <div className='heading  font-bold space text-3xl mb-6 text-center'>Awards</div>
-                <div className='content text-xl'>2 ideas will be awarded <b>Rs. 25000</b> each by <b>Janonam Natural Nutrition</b></div>
+                <div className='content text-xl'>
+Top Two Teams will each receive a prize of<b> Rs. 25000</b> from<b> Janonam Natural Nutrition.</b></div>
             </div>
           </div>
           <div className="bg-orange-400 h-[180vh] lg:h-[60vh] w-full absolute -z-10 bottom-0 left-0 pb-82"></div>
@@ -131,17 +132,17 @@ export default function Home() {
         <div id='idea' className='abi_bhu pt-8 bg-gradient-to-bl from-rose-200 flex space-y-4 flex-col justify-center items-center md:pb-12 pb-8  px-2'>
           <div className='text-4xl font-bold flex flex-row'><span>Ideas</span> <Image className='w-16' src={idea} /></div>
           <div className='flex flex-col justify-center items-center space-y-2 md:w-3/4 rounded-lg shadow-md p-8 bg-violet-500 text-white'>
-            <div className='text-2xl font-bold'> 1.“30 different plants a week” challenge :</div>
+            <div className='text-2xl w-full text-left font-bold'> 1.“30 different plants a week” challenge :</div>
             <div className='md:w-4/5 text-xl'>
               Balancing millets:<br></br> a. Design an ideal meal (with no anti-nutrients) with at least 30 different plants (plant parts) & millets (compulsorily at least 3) to meet 50% of recommended RDA (Recommended Daily Allowances of nutrients) for Indian adults.<br></br> b. Offer convenience in consumption that should be ready to eat or ready to drink – straight out of the box / can – without any cooking/ heating etc.<br></br> c. Enable versatile culinary profile to prepare a wide range of dishes and snacks. Embracing millets in modern diets that appeal to modern tastes and dietary preferences.</div>
           </div>
           <div className='flex flex-col justify-center items-center space-y-2 md:w-3/4 rounded-lg shadow-md p-8 bg-green-500 text-white'>
-            <div className='text-2xl font-bold'> 2. Design Food-Ink cartridge & food printer for Jananom’s vegan Nutrimix :</div>
+            <div className='text-2xl w-full text-left font-bold'> 2. Design Food-Ink cartridge & food printer for Jananom’s vegan Nutrimix :</div>
             <div className='md:w-4/5 text-xl'>
               a. Formulate it suitably for flowing characteristics & rheology for printing.<br></br> b. Able to customize food design on the printer – from a mobile app / website.<br></br> c. Total printing time not to exceed 180 minutes per dish.</div>
           </div>
           <div className='flex flex-col justify-center items-center space-y-2 md:w-3/4 rounded-lg shadow-md p-8 bg-orange-400 text-white'>
-            <div className='text-2xl font-bold'>3. Gut-brain hack for yogic meal :</div>
+            <div className='text-2xl w-full text-left font-bold'>3. Gut-brain hack for yogic meal :</div>
             <div className='md:w-4/5 text-xl'>
               a. As per Indian traditional system, there are certain recommended diets that support gut-brain axis for those who want to do meditation and do tasks that involve mental focus. Design such a diet.<br></br> b. Should meet atleast 20% of RDA<br></br> c. Should involve minimal cooking.</div>
           </div>
