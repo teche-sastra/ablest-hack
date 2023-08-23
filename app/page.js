@@ -1,4 +1,4 @@
-'use client'
+ 'use client'
 import Image from 'next/image'
 import ham from '../images/ham.png'
 import dd from '../images/dd.jpeg'
@@ -50,7 +50,7 @@ export default function Home() {
 
         <div className=' abi_bhu flex justify-center item-center flex-col sm:px-4 md:pt-8 md:px-12 pt-6 bg-gradient-to-tr from-orange-200 h-[80vh] md:h-[84vh]'>
           <div className='flex md:flex-row flex-col justify-center items-center '>
-            <div className='md:w-1/3 flex flex-col space-y-4 md:space-y-6 '>
+            <div className='md:w-1/3 flex flex-col space-y-4 md:space-y-4 '>
               <div className='md:text-4xl md:text-left text-center lg:text-3xl 2xl:text-7xl xl:text-5xl text-4xl md:ml-0 ml-4 font-bold '>Nutrition Hackathon <br></br> 2023</div>
               <div className='md:text-xl  lg:text-2xl 2xl:text-4xl text-2xl text-center md:text-left md:ml-0 ml-4'>Seeking creative theme-oriented ideas from creators throughout India</div>
               <div className='md:py-4  py-4 md:ml-0 ml- flex md:justify-start justify-center'>
@@ -91,7 +91,7 @@ export default function Home() {
         </div> */}
         
         {/* details */}
-        <div className='details h-[180vh] lg:h-[60vh] relative'>
+        <div className='abi_bhu details h-[180vh] lg:h-[60vh] relative'>
           <div className='cardcontain flex lg:flex-row flex-col justify-center items-center gap-24 lg:gap-6'>
             <div className='card -mt-[10vh] pt-6 pl-4 pr-6 pb-2 relative bg-slate-200/90 transition-transform rounded-xl hover:scale-105 hover:shadow-2xl h-auto lg:h-[65vh] md:h-[55vh] w-[80vw] lg:w-[25vw]'>
                 {/* <div className="blur w-full h-full absolute top-0 bg-white"></div> */}
@@ -132,17 +132,17 @@ Top Two Teams will each receive a prize of<b> Rs. 25000</b> from<b> Janonam Natu
         <div id='idea' className='abi_bhu pt-8 bg-gradient-to-bl from-rose-200 flex space-y-4 flex-col justify-center items-center md:pb-12 pb-8  px-2'>
           <div className='text-4xl font-bold flex flex-row'><span>Ideas</span> <Image className='w-16' src={idea} /></div>
           <div className='flex flex-col justify-center items-center space-y-2 md:w-3/4 rounded-lg shadow-md p-8 bg-violet-500 text-white'>
-            <div className='text-2xl w-full text-left md:ml-24 font-bold'> 1.“30 different plants a week” challenge :</div>
+            <div className='text-2xl w-full text-left md:ml-32 font-bold'> 1.“30 different plants a week” challenge :</div>
             <div className='md:w-4/5 text-xl'>
               Balancing millets:<br></br> a. Design an ideal meal (with no anti-nutrients) with at least 30 different plants (plant parts) & millets (compulsorily at least 3) to meet 50% of recommended RDA (Recommended Daily Allowances of nutrients) for Indian adults.<br></br> b. Offer convenience in consumption that should be ready to eat or ready to drink – straight out of the box / can – without any cooking/ heating etc.<br></br> c. Enable versatile culinary profile to prepare a wide range of dishes and snacks. Embracing millets in modern diets that appeal to modern tastes and dietary preferences.</div>
           </div>
           <div className='flex flex-col justify-center items-center space-y-2 md:w-3/4 rounded-lg shadow-md p-8 bg-green-500 text-white'>
-            <div className='text-2xl w-full text-left md:ml-24 font-bold'> 2. Design Food-Ink cartridge & food printer for Jananom’s vegan Nutrimix :</div>
+            <div className='text-2xl w-full text-left md:ml-32 font-bold'> 2. Design Food-Ink cartridge & food printer for Jananom’s vegan Nutrimix :</div>
             <div className='md:w-4/5 text-xl'>
               a. Formulate it suitably for flowing characteristics & rheology for printing.<br></br> b. Able to customize food design on the printer – from a mobile app / website.<br></br> c. Total printing time not to exceed 180 minutes per dish.</div>
           </div>
           <div className='flex flex-col justify-center items-center space-y-2 md:w-3/4 rounded-lg shadow-md p-8 bg-orange-400 text-white'>
-            <div className='text-2xl w-full text-left md:ml-24 font-bold'>3. Gut-brain hack for yogic meal :</div>
+            <div className='text-2xl w-full text-left md:ml-32 font-bold'>3. Gut-brain hack for yogic meal :</div>
             <div className='md:w-4/5 text-xl'>
               a. As per Indian traditional system, there are certain recommended diets that support gut-brain axis for those who want to do meditation and do tasks that involve mental focus. Design such a diet.<br></br> b. Should meet atleast 20% of RDA<br></br> c. Should involve minimal cooking.</div>
           </div>
