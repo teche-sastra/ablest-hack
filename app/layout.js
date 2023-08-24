@@ -1,4 +1,17 @@
 import './globals.css'
+import { Inter,Aladin,Ubuntu } from '@next/font/google'
+const inter=Inter({
+  subsets:['latin'],
+  weight:'400',
+})
+const aladin=Aladin({
+  subsets:['latin'],
+  weight:'400',
+})
+const ubuntu=Ubuntu({
+  subsets:['latin'],
+  weight:'400',
+})
 
 
 export const metadata = {
@@ -9,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={ubuntu.className}>{children}</body>
     </html>
   )
 }

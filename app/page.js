@@ -1,4 +1,4 @@
- 'use client'
+'use client'
 import Image from 'next/image'
 import ham from '../images/ham.png'
 import dd from '../images/dd.jpeg'
@@ -21,7 +21,7 @@ export default function Home() {
   const [open, setopen] = useState(true)
   return (
     <>
-      <div className='font-sans scroll-smooth'>
+      <div className='scroll-smooth'>
         <nav className="bg-white shadow-md p-4 s md:flex flex-row justify-between items-center relative z-0 sm:[20vh] md:h-[16vh]">
           <div className="flex flex-row justify-between">
             <div className='images  w-72 md:flex lg:w-80 md:w-60'>
@@ -49,7 +49,7 @@ export default function Home() {
 
         {/* hero */}
 
-        <div className=' abi_bhu flex justify-center item-center flex-col sm:px-4 md:pt-8 md:px-12 pt-6 bg-gradient-to-tr from-orange-200 h-[80vh] md:h-[84vh]'>
+        <div className='flex justify-center item-center flex-col sm:px-4 md:pt-8 md:px-12 pt-6 bg-gradient-to-tr from-orange-200 h-[80vh] md:h-[84vh]'>
           <div className='flex md:flex-row flex-col justify-center items-center '>
             <div className='md:w-1/3 flex flex-col space-y-4 md:space-y-4 '>
               <div className='md:text-4xl md:text-left text-center lg:text-3xl 2xl:text-7xl xl:text-5xl text-4xl md:ml-0 ml-4 font-bold '>Nutrition Hackathon <br></br> 2023</div>
@@ -90,47 +90,47 @@ export default function Home() {
 
 
         </div> */}
-        
+
         {/* details */}
-        <div className='abi_bhu details h-[180vh] lg:h-[60vh] relative'>
+        <div className=' details h-[180vh] lg:h-[60vh] relative'>
           <div className='cardcontain flex lg:flex-row flex-col justify-center items-center gap-24 lg:gap-6'>
             <div className='card -mt-[10vh] pt-6 pl-4 pr-6 pb-2 relative bg-slate-200/90 transition-transform rounded-xl hover:scale-105 hover:shadow-2xl h-auto lg:h-[65vh] md:h-[55vh] w-[80vw] lg:w-[25vw]'>
-                {/* <div className="blur w-full h-full absolute top-0 bg-white"></div> */}
-                <div className="image mb-4 h-[20vh] w-full grid place-items-center">
-                <Image src={el} className='h-[20vh] w-[25vh]'/>
-                </div>
-                <div className='heading  font-bold space text-3xl mb-6 text-center'>Eligibility</div>
-                <div className='content text-xl'>
-                  <ul className='list-disc pl-6'>
-                    <li>👨Students</li>
-                    <li>👨‍🎓Research Scholars</li>
-                    <li>👨‍🏫Faculties</li>
-                    <li>🛠️Innovators</li>
-                  </ul>
-                  </div>
+              {/* <div className="blur w-full h-full absolute top-0 bg-white"></div> */}
+              <div className="image mb-4 h-[20vh] w-full grid place-items-center">
+                <Image src={el} className='h-[20vh] w-[25vh]' />
+              </div>
+              <div className='heading  font-bold space text-3xl mb-6 text-center'>Eligibility</div>
+              <div className='content text-xl'>
+                <ul className='list-disc pl-6'>
+                  <li>👨Students</li>
+                  <li>👨‍🎓Research Scholars</li>
+                  <li>👨‍🏫Faculties</li>
+                  <li>🛠️Innovators</li>
+                </ul>
+              </div>
             </div>
             <div className='card text-center -mt-[10vh] pt-6 pl-4 pr-6 pb-2 bg-gray-200/90  transition-transform rounded-xl hover:scale-105 overflow-y-auto  lg:h-[65vh] hover:shadow-2xl h-auto md:h-[55vh] w-[80vw] lg:w-[25vw]'>
-                <div className="image mb-4 h-[20vh] w-full grid place-items-center">
-                <Image src={dl} className='h-[20vh] w-[25vh]'/>
-                </div>
-                <div className='heading  font-bold space text-3xl mb-6 text-center'>Instructions</div>
-                 <div className='content text-xl'>
-                  <ul className=' list-disc text-left pl-6'>
-                    <li>📜Registration is mandatory</li>
-                    <li>🧑‍🤝‍🧑Max 4 members per team</li>
-                    <li>🎥Max video length 3 mins</li>
-                    <li>📆Deadline- 20th Sep 2023</li>
-                    <li>📧Submit at <b>ablest@sastra.ac.in</b></li>
-                  </ul>
-                  </div>
+              <div className="image mb-4 h-[20vh] w-full grid place-items-center">
+                <Image src={dl} className='h-[20vh] w-[25vh]' />
+              </div>
+              <div className='heading  font-bold space text-3xl mb-6 text-center'>Instructions</div>
+              <div className='content text-xl'>
+                <ul className=' list-disc text-left pl-6'>
+                  <li>📜Registration is mandatory</li>
+                  <li>🧑‍🤝‍🧑Teams should have no more than 4 members each</li>
+                  <li>🎥Videos must not exceed 3 minutes in length</li>
+                  <li>📆Deadline- 20th Sep 2023</li>
+                  <li>📧Submit at <b>ablest@sastra.ac.in</b></li>
+                </ul>
+              </div>
             </div>
             <div className='card text-center -mt-[10vh] pt-6 pl-4 pr-6 pb-2 bg-gray-200/90  transition-transform rounded-xl hover:scale-105 lg:h-[65vh] hover:shadow-2xl h-auto md:h-[55vh] w-[80vw] lg:w-[25vw]'>
-                <div className="image mb-4 h-[20vh] w-full grid place-items-center">
-                <Image src={star} className='h-[20vh] w-[25vh]'/>
-                </div>
-                <div className='heading  font-bold space text-3xl mb-6 text-center'>Awards</div>
-                <div className='content text-xl'>
-Top Two Teams will each receive a prize of<b> Rs. 25000</b> from<b> Janonam Natural Nutrition.</b></div>
+              <div className="image mb-4 h-[20vh] w-full grid place-items-center">
+                <Image src={star} className='h-[20vh] w-[25vh]' />
+              </div>
+              <div className='heading  font-bold space text-3xl mb-6 text-center'>Awards</div>
+              <div className='content text-xl'>
+                Top Two Teams will each receive a prize of<b> Rs. 25000</b> from<b> Janonam Natural Nutrition.</b></div>
             </div>
           </div>
           <div className="bg-orange-400 h-[180vh] lg:h-[60vh] w-full absolute -z-10 bottom-0 left-0 pb-82"></div>
@@ -148,8 +148,8 @@ Top Two Teams will each receive a prize of<b> Rs. 25000</b> from<b> Janonam Natu
                 <li>Offer convenience in consumption that should be ready to eat or ready to drink – straight out of the box / can – without any cooking/ heating etc</li>
                 <li>Enable versatile culinary profile to prepare a wide range of dishes and snacks. Embracing millets in modern diets that appeal to modern tastes and dietary preferences</li>
               </ul>
-               {/* a. Design an ideal meal (with no anti-nutrients) with at least 30 different plants (plant parts) & millets (compulsorily at least 3) to meet 50% of recommended RDA (Recommended Daily Allowances of nutrients) for Indian adults.<br></br> b. Offer convenience in consumption that should be ready to eat or ready to drink – straight out of the box / can – without any cooking/ heating etc.<br></br> c. Enable versatile culinary profile to prepare a wide range of dishes and snacks. Embracing millets in modern diets that appeal to modern tastes and dietary preferences. */}
-               </div>
+              {/* a. Design an ideal meal (with no anti-nutrients) with at least 30 different plants (plant parts) & millets (compulsorily at least 3) to meet 50% of recommended RDA (Recommended Daily Allowances of nutrients) for Indian adults.<br></br> b. Offer convenience in consumption that should be ready to eat or ready to drink – straight out of the box / can – without any cooking/ heating etc.<br></br> c. Enable versatile culinary profile to prepare a wide range of dishes and snacks. Embracing millets in modern diets that appeal to modern tastes and dietary preferences. */}
+            </div>
           </div>
           <div className='flex flex-col justify-center items-center space-y-2 md:w-3/4 rounded-lg shadow-md p-8 bg-green-500 text-white'>
             <div className='text-2xl w-full text-left md:ml-32 font-bold'> 2. Design Food-Ink cartridge & food printer for Jananom’s vegan Nutrimix :</div>
@@ -160,18 +160,18 @@ Top Two Teams will each receive a prize of<b> Rs. 25000</b> from<b> Janonam Natu
                 <li>Total printing time not to exceed 180 minutes per dish</li>
               </ul>
               {/* a. Formulate it suitably for flowing characteristics & rheology for printing.<br></br> b. Able to customize food design on the printer – from a mobile app / website.<br></br> c. Total printing time not to exceed 180 minutes per dish. */}
-              </div>
+            </div>
           </div>
           <div className='flex flex-col justify-center items-center space-y-2 md:w-3/4 rounded-lg shadow-md p-8 bg-orange-400 text-white'>
             <div className='text-2xl w-full text-left md:ml-32 font-bold'>3. Gut-brain hack for yogic meal :</div>
             <div className='md:w-4/5 text-xl'>
               <ul className='list-disc'>
-                  <li>As per Indian traditional system, there are certain recommended diets that support gut-brain axis for those who want to do meditation and do tasks that involve mental focus. Design such a diet</li>
-                  <li>Should meet atleast 20% of RDA</li>
-                  <li>Should involve minimal cooking</li>
+                <li>As per Indian traditional system, there are certain recommended diets that support gut-brain axis for those who want to do meditation and do tasks that involve mental focus. Design such a diet</li>
+                <li>Should meet atleast 20% of RDA</li>
+                <li>Should involve minimal cooking</li>
               </ul>
               {/* a. As per Indian traditional system, there are certain recommended diets that support gut-brain axis for those who want to do meditation and do tasks that involve mental focus. Design such a diet.<br></br> b. Should meet atleast 20% of RDA<br></br> c. Should involve minimal cooking.\ */}
-              </div>
+            </div>
           </div>
         </div>
 
