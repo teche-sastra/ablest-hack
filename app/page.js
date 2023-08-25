@@ -1,20 +1,15 @@
 'use client'
 import Image from 'next/image'
 import ham from '../images/ham.png'
-import dd from '../images/dd.jpeg'
 import sas from '../images/sas.png'
 import arrow from '../images/arrow.png'
 import fruits from '../images/fruits.png'
-import date from '../images/date.png'
 import star from '../images/star.png'
-import eli from '../images/eli.png'
 import tbi from '../images/tbi.png'
 import jana from '../images/jana.png'
 import idea from '../images/idea.png'
-import abt from '../images/abt.png'
 import el from '../images/el.png'
 import dl from '../images/dl.png'
-import about from '../images/about.png'
 import { useState } from 'react'
 import "./style.css"
 export default function Home() {
@@ -34,7 +29,7 @@ export default function Home() {
 
 
 
-          <ul className={`top-[20vh] transition-all mt-4 ease-in font-bold border-x-2 border-b-2 md:border-none border-orange-300 duration-300 ${open ? 'opacity-0 md:opacity-100' : ''} bg-orange-200   md:py-0 pt-4 pl-2 md:pl-0 w-full md:w-auto left-0 md:flex flex-row md:items-center  z-[-1] md:z-auto md:static absolute md:bg-transparent`}>
+          <ul className={` transition-all mt-4 ease-in font-bold border-x-2 border-b-2 md:border-none border-orange-300 duration-300 ${open ? 'opacity-0 md:opacity-100' : ''} bg-orange-200   md:py-0 pt-4 pl-2 md:pl-0 w-full md:w-auto left-0 md:flex flex-row md:items-center  z-[-1] md:z-auto md:static absolute md:bg-transparent`}>
             {/* <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#about'>About</a></li> */}
             {/* <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#eligible'>Eligibility</a></li> */}
             <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#details'>Details</a></li>
@@ -51,7 +46,7 @@ export default function Home() {
 
         <div className='flex justify-center item-center flex-col sm:px-4 md:pt-8 md:px-12 pt-6 bg-gradient-to-tr from-orange-200 h-[80vh] md:h-[84vh]'>
           <div className='flex md:flex-row flex-col justify-center items-center '>
-            <div className='md:w-1/3 flex flex-col space-y-4 md:space-y-4 '>
+            <div className='md:w-1/3 flex flex-col space-y-4 md:space-y-2 '>
               <div className='md:text-4xl md:text-left text-center lg:text-3xl 2xl:text-7xl xl:text-5xl text-4xl md:ml-0 ml-4 font-bold '>Nutrition Hackathon <br></br> 2023</div>
               <div className='md:text-xl  lg:text-2xl 2xl:text-4xl text-2xl text-center md:text-left md:ml-0 ml-4'>Seeking creative theme-oriented ideas from creators throughout India</div>
               <div className='md:py-4  py-4 md:ml-0 ml- flex md:justify-start justify-center'>
@@ -66,30 +61,7 @@ export default function Home() {
         </div>
 
 
-        {/* about */}
-
-
-        {/* <div id='about' className='flex flex-col bg-gradient-to-br from-orange-200 space-y-4 pb-8 justify-center items-center pt-8 p-4'>
-          <div className='lg:text-4xl font-bold text-3xl md:text-3xl'>About</div>
-          <Image className='w-72' src={about} />
-          <div className='md:w-3/5 text-center font-semibold text-xl md:text-2xl'>We are welcoming submissions for theme-based concepts in the "Nutrition Hackathon 2023," calling upon Students, Research Scholars, Faculty, and Innovators from across India to participate.
-            This Nutrition Innovation Event is brought to you by
-            SASTRA - ABLEST & JANANOM NATURAL NUTRITION.
-
-          </div>
-
-
-        </div>
-        <div id='eligible' className='flex flex-col pt-8 space-y-0 bg-gradient-to-tl from-rose-200  justify-center items-center p-4'>
-          <div className='lg:text-4xl font-bold text-3xl md:text-3xl'>Eligibility</div>
-          <Image className='w-72' src={el} />
-          <div className='md:w-3/5 text-xl font-semibold text-center md:text-2xl'>Students, Research Scholars, Faculties & Innovators</div>
-          
-          
-          
-
-
-        </div> */}
+       
 
         {/* details */}
         <div className=' details h-[180vh] lg:h-[60vh] relative'>
@@ -176,32 +148,7 @@ export default function Home() {
         </div>
 
 
-        {/* dates awards */}
-
-
-        {/* <div id='awa' className='flex flex-col justify-center items-center space-y-12 pb-12  md:m-0 bg-gradient-to-tl from-amber-300'>
-          <div className='text-center text-4xl mt-12 font-bold'>Dates And Awards</div>
-          <div className=' flex flex-col-reverse md:flex-row p-2 md:px-12 justify-center items-center md:w-3/5 '>
-            <div className='shadow-lg  flex flex-col bg-violet-500 p-6 rounded-xl text-white'>
-              <div className='text-3xl'>Dates</div>
-              <div className='text-xl w-3/4'>Dead Line for submitting the short video of maximum of 3 minutes at ablest@sastra.ac.in , is
-                <span className='font-bold'> 20th Sep 2023</span></div>
-            </div>
-            <div className='md:w-1/4 relative top-8'>
-              <Image className='w-48 md:64' src={dl} />
-            </div>
-          </div>
-          <div className='flex flex-col md:flex-row md:px-12 p-2 justify-center items-center  '>
-            <div className='md:w-1/4 relative top-8 md:left-12'>
-              <Image className='w-56' src={star} />
-            </div>
-            <div className='shadow-lg md:w-3/5 flex flex-col bg-amber-400 p-6 rounded-xl text-white'>
-              <div className='text-3xl'>Awards</div>
-              <div className='text-xl w-3/4'>The two most outstanding team ideas will be awarded a cash prize of <span className='font-bold'>Rs. 25,000</span> each by Janonam Natural Nutrition.</div>
-            </div>
-
-          </div>
-        </div> */}
+       
 
 
 
