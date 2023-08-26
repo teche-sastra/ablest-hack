@@ -91,7 +91,7 @@ export default function Home() {
                   <li>📜Registration is mandatory</li>
                   <li>🧑‍🤝‍🧑Teams should have no more than 4 members each</li>
                   <li>🎥Videos must not exceed 3 minutes in length</li>
-                  <li>📆Deadline- 20th Sep 2023</li>
+                  <li>📆Deadline - 20th Sep 2023</li>
                   <li>📧Submit at <b>ablest@sastra.ac.in</b></li>
                 </ul>
               </div>
