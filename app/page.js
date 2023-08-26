@@ -91,7 +91,7 @@ export default function Home() {
                   <li>📜Registration is mandatory</li>
                   <li>🧑‍🤝‍🧑Teams should have no more than 4 members each</li>
                   <li>🎥Videos must not exceed 3 minutes in length</li>
-                  <li>📆Deadline- 20th Sep 2023</li>
+                  <li>📆Deadline - 20th Sep 2023</li>
                   <li>📧Submit at <b>ablest@sastra.ac.in</b></li>
                 </ul>
               </div>
@@ -165,7 +165,7 @@ export default function Home() {
         <div className="h-1 bg-gray-700"></div>
         <div className="flex flex-col justify-center items-center bg-gray-800 text-gray-400 p-8 md:pl-40 md:pr-40">
           <div>MADE BY <a href='https://ecellsastra.org' className='font-bold' target='_main'>TECH-E</a></div>
-          <div className='text-center'><a href='https://ecellsastra.org' className='font-bold' target='_main'>&copy; E-Cell SASTRA</a>.All Rights Reserved 2023 </div>
+          <div className='text-center'><a href='https://ecellsastra.org' className='font-bold' target='_main'>&copy; E-Cell SASTRA</a>. All Rights Reserved 2023 </div>
 
         </div>
 
