@@ -24,7 +24,7 @@ export default function Home() {
             <div className='images  w-72 md:flex lg:w-80 md:w-60'>
               <Image className='md:w-36' src={sas} />
               <Image className='' src={tbi} />
-              {/*  <Image className='hidden lg:flex lg:w-36' src={jana} /> */}
+              <Image className='hidden lg:flex lg:w-36' src={jana} />
             </div>
             <span className="md:hidden block cursor-pointer"><button onClick={() => setopen(!open)}  ><Image className="w-8" src={ham} /></button></span>
           </div>
@@ -167,7 +167,7 @@ export default function Home() {
         <div className="abi_bhu pb-16  bg-gray-800 pt-8 ">
           <div className='text-2xl m-4 text-center text-gray-400  hover:text-white'>Our Sponsors</div>
           <div className='flex md:flex-row flex-col flex-wrap justify-evenly items-center space-y-4 p-4'>
-            { /* <Image className='h-24' src={jana} /> */}
+           <Image className='h-24' src={jana} />
           </div>
 
 
