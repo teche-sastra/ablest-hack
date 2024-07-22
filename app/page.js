@@ -18,7 +18,7 @@ export default function Home() {
   const [open, setopen] = useState(true)
   return (
     <>
-      <div className='scroll-smooth'>
+      <div className='scroll-smooth flex flex-col'>
         <nav className="bg-white shadow-md p-4 s md:flex flex-row justify-between items-center relative z-0 sm:[20vh] md:h-[16vh]">
           <div className="flex flex-row justify-between">
             <div className='images  w-72 md:flex lg:w-80 md:w-60'>
@@ -46,11 +46,11 @@ export default function Home() {
 
         {/* hero */}
 
-        <div className='flex justify-center item-center flex-col sm:px-4 md:pt-8 md:px-12 pt-6 bg-gradient-to-tr from-green-300 h-[80vh] md:h-[84vh]'>
+        <div className='flex justify-center item-center flex-col sm:px-4 md:pt-8 md:px-12 pt-52 bg-gradient-to-tr from-green-300 h-[80vh] md:h-[84vh]'>
           <div className='flex md:flex-row flex-col justify-center items-center '>
             <div className='md:w-1/3 flex flex-col space-y-4 md:space-y-2 '>
-              <div className='md:text-6xl md:text-left text-center lg:text-6xl :text-6xl :text-6xl text-6xl md:ml-0 ml-4 font-bold mt-12'>AgriTech Convergence Hackathon <br></br> 2024</div>
-              <div className='md:text-3xl  lg:text-3xl :text-3xl text-3xl text-center md:text-left md:ml-0 ml-4'>Seeking creative theme-oriented ideas from creators throughout India</div>
+              <div className='md:text-6xl md:text-left text-center lg:text-6xl  text-3xl md:ml-0 ml-4 font-bold mt-12'>AgriTech Convergence Hackathon <br></br> 2024</div>
+              <div className='md:text-3xl  lg:text-3xl  text-xl text-center md:text-left md:ml-0 ml-4'>Seeking creative theme-oriented ideas from creators throughout India</div>
               <div className='md:py-4  py-4 md:ml-0 ml- flex md:justify-start justify-center'>
                 <button className='px-4 mb-20 md:px-6 lg:px-8 p-2 rounded-3xl flex text-xl md:text-xl flex-row justify-center items-center space-x-2 hover:bg-green-400 bg-green-500'><span><a id='details' href='https://docs.google.com/forms/d/e/1FAIpQLScU5zi0XvGaNRQvhmq2KWqV0d8gO46SgJHHK9uyvgUVtr5opQ/viewform' target='_main'>Register</a></span> <Image className='w-4' src={arrow} /></button>
               </div>
@@ -66,7 +66,7 @@ export default function Home() {
        
 
         {/* details */}
-        <div className=' details h-[180vh] lg:h-[60vh] relative'>
+        <div className=' details bg-green-600  h-auto lg:h-[60vh] relative'>
           <div className='cardcontain flex lg:flex-row flex-col justify-center items-center gap-24 lg:gap-6'>
             <div className='card -mt-[10vh] pt-6 pl-4 pr-6 pb-2 relative bg-slate-200/90 transition-transform rounded-xl hover:scale-105 hover:shadow-2xl h-auto lg:h-[65vh] md:h-[55vh] w-[80vw] lg:w-[25vw] mb-12'>
               {/* <div className="blur w-full h-full absolute top-0 bg-white"></div> */}
@@ -103,7 +103,7 @@ export default function Home() {
                 <Image src={star} className='h-[20vh] w-[25vh]' />
               </div>
               <div className='heading  font-bold space text-3xl mb-6 text-center'>Awards</div>
-              <div className='content text-xl'>
+              <div className='content text-center text-xl'>
                WILL BE REVEALED SOON</div>
             </div>
           </div>
@@ -155,7 +155,7 @@ export default function Home() {
                 ----already commented---- a. As per Indian traditional system, there are certain recommended diets that support gut-brain axis for those who want to do meditation and do tasks that involve mental focus. Design such a diet.<br></br> b. Should meet atleast 20% of RDA<br></br> c. Should involve minimal cooking.\ 
             </div> 
           </div> */}
-          <h1 className='text-4xl'>Things will be revealed soon 🤩</h1>
+          <h1 className='text-4xl text-center'>Things will be revealed soon 🤩</h1>
         </div>
 
 
