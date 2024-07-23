@@ -10,6 +10,8 @@ import jana from '../images/jana.png'
 import idea from '../images/idea.png'
 import el from '../images/el.png'
 import dl from '../images/dl.png'
+import f1 from '../images/f1.jpg'
+import f2 from '../images/f2.jpg'
 import farmer from '../images/farmer.png'
 
 import { useState } from 'react'
@@ -56,7 +58,7 @@ export default function Home() {
               </div>
             </div>
             <div className='md:block mb-32'>
-              <Image className='h-[30vh] w-[30vh] md:h-[50vh] md:w-[50vh]' src={farmer} />
+              <Image className='h-[30vh] hidden md:flex w-[30vh] md:h-[50vh] md:w-[50vh]' src={farmer} />
             </div>
           </div>
 
@@ -104,7 +106,13 @@ export default function Home() {
               </div>
               <div className='heading  font-bold space text-3xl mb-6 text-center'>Awards</div>
               <div className='content text-center text-xl'>
-               WILL BE REVEALED SOON</div>
+              <div className='content text-xl'>
+                <ul className=' list-disc text-left pl-6'>
+                  <li>💰Cash Awards</li>
+                  <li>Incubation and Mentorship support</li>
+                </ul>
+              </div>
+              </div>
             </div>
           </div>
           <div className="bg-green-500 h-[180vh] lg:h-[60vh] w-full absolute -z-10 bottom-0 left-0 pb-82"></div>
@@ -167,7 +175,8 @@ export default function Home() {
         <div className="abi_bhu pb-16  bg-gray-800 pt-8 ">
           <div className='text-2xl m-4 text-center text-gray-400  hover:text-white'>Our Sponsors</div>
           <div className='flex md:flex-row flex-col flex-wrap justify-evenly items-center space-y-4 p-4'>
-           <Image className='h-24' src={jana} />
+           <Image className='md:w-1/3 h-80' src={f1} />
+           <Image className='md:w-1/3 h-80' src={f2} />
           </div>
 
 
