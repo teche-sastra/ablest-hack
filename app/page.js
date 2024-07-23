@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import ham from '../images/ham.png'
-import sas from '../images/sas.png'
+import sa from '../images/sa.jpg'
 import arrow from '../images/arrow.png'
 import fruits from '../images/fruits.png'
 import star from '../images/star.png'
@@ -24,7 +24,7 @@ export default function Home() {
         <nav className="bg-white shadow-md p-4 s md:flex flex-row justify-between items-center relative z-0 sm:[20vh] md:h-[16vh]">
           <div className="flex flex-row justify-between">
             <div className='images  w-72 md:flex lg:w-80 md:w-60'>
-              <Image className='md:w-36' src={sas} />
+              <Image className='md:w-36' src={sa} />
               <Image className='' src={tbi} />
               {/* <Image className='hidden lg:flex lg:w-36' src={jana} /> */}
             </div>
