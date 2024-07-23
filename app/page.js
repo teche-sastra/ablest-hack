@@ -26,7 +26,7 @@ export default function Home() {
             <div className='images  w-72 md:flex lg:w-80 md:w-60'>
               <Image className='md:w-36' src={sas} />
               <Image className='' src={tbi} />
-              <Image className='hidden lg:flex lg:w-36' src={jana} />
+              {/* <Image className='hidden lg:flex lg:w-36' src={jana} /> */}
             </div>
             <span className="md:hidden block cursor-pointer"><button onClick={() => setopen(!open)}  ><Image className="w-8" src={ham} /></button></span>
           </div>
