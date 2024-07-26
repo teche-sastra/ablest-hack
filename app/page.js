@@ -21,10 +21,10 @@ export default function Home() {
   return (
     <>
       <div className='scroll-smooth flex flex-col'>
-        <nav className="bg-white shadow-md p-4 s md:flex flex-row justify-between items-center relative z-0 sm:[20vh] md:h-[16vh]">
+        <nav className="bg-white shadow-md p-4 s md:flex flex-row justify-between items-center relative z-0 sm:[20vh] ">
           <div className="flex flex-row justify-between">
             <div className='images  w-72 md:flex lg:w-80 md:w-60'>
-              <Image className='md:w-36' src={sa} />
+              {/* <Image className='md:w-36' src={sa} /> */}
               <Image className='' src={tbi} />
               {/* <Image className='hidden lg:flex lg:w-36' src={jana} /> */}
             </div>
@@ -220,8 +220,11 @@ export default function Home() {
         <div className="abi_bhu pb-16  bg-gray-800 pt-8 ">
           <div className='text-2xl m-4 text-center text-gray-400  hover:text-white'>Our Sponsors</div>
           <div className='flex md:flex-row flex-col flex-wrap justify-evenly items-center space-y-4 p-4'>
-           <Image className='md:w-1/3 h-80' src={f1} />
-           <Image className='md:w-1/3 h-80' src={f2} />
+           <Image className='md:w-1/4 h-80' src={f1} />
+           <Image className='md:w-1/4 h-80' src={f2} />
+           <Image className='md:w-1/4 h-80' src={sa} />
+           
+           
           </div>
 
 
