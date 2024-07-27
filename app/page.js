@@ -1,21 +1,20 @@
 'use client'
-import Image from 'next/image'
-import ham from '../images/ham.png'
-import sa from '../images/sa.jpg'
-import arrow from '../images/arrow.png'
-import fruits from '../images/fruits.png'
-import star from '../images/star.png'
-import tbi from '../images/tbi.png'
-import jana from '../images/jana.png'
-import idea from '../images/idea.png'
-import el from '../images/el.png'
-import dl from '../images/dl.png'
-import f1 from '../images/f1.jpg'
-import f2 from '../images/f2.jpg'
-import farmer from '../images/farmer.png'
 
-import { useState } from 'react'
-import "./style.css"
+import { useState } from 'react';
+import Image from 'next/image';
+
+import ham from '../images/ham.png';
+import sa from '../images/sa.jpg';
+import arrow from '../images/arrow.png';
+import star from '../images/star.png';
+import tbi from '../images/tbi.png';
+import idea from '../images/idea.png';
+import el from '../images/el.png';
+import dl from '../images/dl.png';
+import f1 from '../images/f1.jpg';
+import f2 from '../images/f2.jpg';
+import farmer from '../images/farmer.png';
+
 export default function Home() {
   const [open, setopen] = useState(true)
   return (
@@ -24,9 +23,7 @@ export default function Home() {
         <nav className="bg-white shadow-md p-4 s md:flex flex-row justify-between items-center relative z-0 sm:[20vh] ">
           <div className="flex flex-row justify-between">
             <div className='images  w-72 md:flex lg:w-80 md:w-60'>
-              {/* <Image className='md:w-36' src={sa} /> */}
               <Image className='' src={tbi} />
-              {/* <Image className='hidden lg:flex lg:w-36' src={jana} /> */}
             </div>
             <span className="md:hidden block cursor-pointer"><button onClick={() => setopen(!open)}  ><Image className="w-8" src={ham} /></button></span>
           </div>
