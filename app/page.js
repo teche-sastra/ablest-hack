@@ -30,11 +30,13 @@ export default function Home() {
           </div>
 
           <ul className={`transition-all mt-4 ease-in font-medium border-x-2 border-b-2 md:border-none border-green-400 duration-300 ${open ? 'opacity-0 opacity-100' : ''} md:py-0 pt-4 pl-2 md:pl-0 w-full md:w-auto left-0 md:flex flex-row md:items-center z-[-1] md:z-auto md:static absolute md:bg-transparent`}>
+            <li className='mx-4 md:my-0 my-2 pb-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600'><a href="https://ablest.sastra.edu">Home</a></li>
             <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#about'>About</a></li>
             <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-green-400 cursor-pointer hover:text-green-600"><a href='#details'>Details</a></li>
             <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#guidelines'>Guidelines</a></li>
             <li className="mx-4 md:my-0 my-6 pb-2 md:border-none border-green-300 cursor-pointer hover:text-green-600"><a href='#themes'>Themes</a></li>
-            <li className="mx-4 md:my-0 my-2 pb-2  md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#faq'>FAQs</a></li>
+            <li className="mx-4 md:my-0 my-2 pb-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#faq'>FAQs</a></li>
+            <li className='mx-4 md:my-0 my-2 pb-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600'><a href="https://ablest.sastra.edu/contact.php">Contact Us</a></li>
           </ul>
         </nav>
 
@@ -70,10 +72,10 @@ export default function Home() {
               <div className='heading font-bold space text-3xl mb-6 text-center'>Eligibility</div>
               <div className='content text-xl'>
                 <ul className='list-disc pl-6'>
-                  <li>👨 Students and professionals from all backgrounds (technology, agriculture, business, etc.)</li>
-                  <li>👨‍💼 Startups</li>
-                  <li>👨‍🎓 Researchers and academics</li>
-                  <li>🛠 Anyone with a passion for Agri-tech innovation</li>
+                  <li>Students and professionals from all backgrounds (technology, agriculture, business, etc.)</li>
+                  <li>Startups</li>
+                  <li>Researchers and academics</li>
+                  <li>Anyone with a passion for Agri-tech innovation</li>
                 </ul>
               </div>
             </div>
@@ -124,10 +126,10 @@ export default function Home() {
         <div id="guidelines" className="pt-24 px-16 lg:px-48 text-xl font-light">
           <h2 className='text-3xl font-medium pb-10'>Guidelines</h2>
           <ul className='list-disc pl-6'>
-            <li>📜 Registration is <strong>mandatory.</strong></li>
-            <li>🧑‍🤝‍🧑 Each team can have up to <strong>4 members</strong>, including the team leader.</li>
-            <li>🤝 Members from different branches of the same college/institute are encouraged to form a team.</li>
-            <li>📆Presentation submission Deadline - <strong className='font-medium'>August 17, 2024</strong><br />This PPT will be <strong>reviewed</strong> by the Preliminary Screening and Evaluation Committee.</li>
+            <li>Registration is <strong>mandatory.</strong></li>
+            <li>Each team can have up to <strong>4 members</strong>, including the team leader.</li>
+            <li>Members from different branches of the same college/institute are encouraged to form a team.</li>
+            <li>Presentation submission Deadline - <strong className='font-medium'>August 17, 2024</strong><br />This PPT will be <strong>reviewed</strong> by the Preliminary Screening and Evaluation Committee.</li>
             </ul>
         </div>
 
