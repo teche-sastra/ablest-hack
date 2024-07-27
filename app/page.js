@@ -58,8 +58,8 @@ export default function Home() {
 
         {/* details */}
         <div className='py-5'>
-          <div className='cardcontain flex lg:flex-row flex-col justify-center items-center gap-24 lg:gap-6'>
-            <div id="details" className='card pt-6 pl-4 pr-6 pb-2 relative bg-slate-200 transition-transform rounded-md hover:scale-105 hover:shadow-2xl h-auto lg:h-[65vh] md:h-[55vh] w-[80vw] lg:w-[25vw] mb-12'>
+          <div className='cardcontain flex lg:flex-row flex-col justify-center items-center gap-6'>
+            <div id="details" className='h-[65vh] md:h-[85vh] xl:h-[70vh] card pt-6 pl-4 pr-6 pb-2 relative bg-slate-200 transition-transform rounded-md hover:scale-105 hover:shadow-2xl w-[80vw] lg:w-[25vw] mb-12'>
               <div className="image mb-4 h-[20vh] w-full grid place-items-center">
                 <Image src={el} className='h-[20vh] w-[25vh]' />
               </div>
@@ -73,7 +73,7 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-            <div className='card text-center pt-6 pl-4 pr-6 pb-2 bg-slate-200 transition-transform rounded-md hover:scale-105 overflow-y-auto  lg:h-[65vh] hover:shadow-2xl h-auto md:h-[55vh] w-[80vw] lg:w-[25vw] mb-12'>
+            <div className='h-[75vh] md:h-[85vh] xl:h-[70vh] card pt-6 pl-4 pr-6 pb-2 relative bg-slate-200 transition-transform rounded-md hover:scale-105 hover:shadow-2xl w-[80vw] lg:w-[25vw] mb-12'>
               <div className="image mb-4 h-[20vh] w-full grid place-items-center">
                 <Image src={dl} className='h-[20vh] w-[25vh]' />
               </div>
@@ -92,11 +92,11 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-            <div id="awa" className='card text-center pt-6 pl-4 pr-6 pb-2 bg-slate-200 transition-transform rounded-md hover:scale-105 lg:h-[65vh] hover:shadow-2xl h-auto md:h-[55vh] w-[80vw] lg:w-[25vw] mb-12'>
+            <div id="awa" className='h-[70vh] md:h-[85vh] xl:h-[70vh] card text-center pt-6 pl-4 pr-6 pb-2 bg-slate-200 transition-transform rounded-md hover:scale-105 hover:shadow-2xl w-[80vw] lg:w-[25vw] mb-12'>
               <div className="image mb-4 h-[20vh] w-full grid place-items-center">
                 <Image src={star} className='h-[20vh] w-[25vh]' />
               </div>
-              <div className='heading  font-bold space text-3xl mb-6 text-center'>Prizes</div>
+              <div className='heading font-bold space text-3xl mb-6 text-center'>Prizes</div>
               <div className='content text-center text-xl'>
               <div className='content text-xl'>
                 <ul className=' list-disc text-left pl-6'>
