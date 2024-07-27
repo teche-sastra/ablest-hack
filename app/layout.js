@@ -1,10 +1,10 @@
-import { Ubuntu } from 'next/font/google';
+import { Rubik } from 'next/font/google';
 
 import './globals.css'
 
-const ubuntu = Ubuntu({
+const font = Rubik({
   subsets:['latin'],
-  weight:'400',
+  weight: ['300', '400', '500', '600', '700'],
 });
 
 export const metadata = {
@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={ubuntu.className}>{children}</body>
+      <body className={font.className}>{children}</body>
     </html>
   );
 }
