@@ -62,7 +62,7 @@ export default function Home() {
         </div>
 
         <div className="pt-24 px-16 text-xl font-light">
-          <h2 className='px-32 text-3xl font-medium pb-10'>Timeline</h2>
+          <h2 className='lg:px-32 text-3xl font-medium pb-10'>Timeline</h2>
           <ul className='timeline timeline-vertical xl:timeline-horizontal justify-center'>
             <li>
               <hr className='bg-orange-300' />
