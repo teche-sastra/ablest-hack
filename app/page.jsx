@@ -3,16 +3,16 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-import ham from './images/ham.png';
-import sa from './images/sa.jpg';
-import arrow from './images/arrow.png';
-import star from './images/star.png';
-import tbi from './images/tbi.png';
-import el from './images/el.png';
-import dl from './images/dl.png';
-import f1 from './images/f1.jpg';
-import f2 from './images/f2.jpg';
-import agritech from './images/agritech.jpg';
+import ablest from '../images/ablest.png';
+import hamburger from '../images/hamburger.png';
+import agritech from '../images/agritech.jpg';
+import arrow from '../images/arrow.png';
+import eligible from '../images/eligible.png';
+import work from '../images/work.png';
+import prize from '../images/prize.png';
+import sastra from '../images/sastra.jpg';
+import tnau from '../images/tnau.jpg';
+import tabif from '../images/tabif.jpg';
 
 export default function Home() {
   const [open, setopen] = useState(false);
@@ -21,10 +21,10 @@ export default function Home() {
       <div className='bg-[#F5FFF7] flex flex-col'>
         <nav className="bg-white shadow-md p-4 s lg:flex flex-row justify-between items-center z-40 sm:[20vh] sticky top-0 left-0">
           <div className="flex flex-row justify-between">
-            <Image className='h-16 w-auto' src={tbi} />
+            <Image className='h-8 md:h-16 w-auto' src={ablest} />
             <span className="lg:hidden block cursor-pointer">
               <button onClick={() => setopen(!open)} >
-                <Image className="w-8" src={ham} />
+                <Image className="w-8" src={hamburger} />
               </button>
             </span>
           </div>
@@ -46,8 +46,8 @@ export default function Home() {
           <div className={`flex justify-center item-center flex-col sm:px-4 md:pt-8 md:px-12 pt-52 z-10 h-screen relative`}>
             <div className='flex md:flex-row flex-col justify-center items-center '>
               <div className='md:w-3/4 flex flex-col space-y-4 md:space-y-2 '>
-                <div className='md:text-6xl md:text-left text-center lg:text-6xl text-3xl md:ml-0 ml-4 font-medium text-white mt-12'>Agri-Tech Hackathon 2024</div>
-                <div className='md:text-3xl text-white text-xl text-center md:text-left md:ml-0 ml-4 font-light'>Uniting innovative thinkers nationwide to create groundbreaking solutions for the critical challenges in today's agricultural landscape.</div>
+                <div className='md:text-6xl md:text-left text-center lg:text-6xl text-3xl md:mx-0 mx-4 font-medium text-white mt-12'>Agri-Tech Hackathon 2024</div>
+                <div className='md:text-3xl text-white text-xl text-center md:text-left md:mx-0 mx-4 font-light'>Uniting innovative thinkers nationwide to create groundbreaking solutions for the critical challenges in today's agricultural landscape.</div>
                 <div className='md:py-4 py-4 md:ml-0 ml- flex md:justify-start justify-center'>
                   <a className='px-4 mb-20 md:px-6 lg:px-8 p-2 rounded-xl flex text-xl md:text-xl flex-row justify-center items-center space-x-2 font-medium hover:bg-green-300 bg-green-500' href='https://forms.gle/iwyFnfhB3PasWdqD6'><span>Register</span> <Image className='w-4' src={arrow} /></a>
                 </div>
@@ -61,13 +61,72 @@ export default function Home() {
           The agriculture sector is at a crucial juncture, needing to adopt cutting-edge technology to address the challenges posed by a growing global population, climate change, and sustainability. An agri-tech hackathon is a vital event that brings together innovators—technologists, farmers, researchers, and entrepreneurs—to drive advancements in agriculture. By fostering collaboration, this hackathon aims to develop smart farming solutions and build resilient systems that improve food security, resource management, and environmental sustainability. Now is the time for the brightest minds to innovate and shape a more sustainable future for agriculture.
         </div>
 
-        {/* details */}
+        <div className="pt-24 px-16 text-xl font-light">
+          <h2 className='px-32 text-3xl font-medium pb-10'>Timeline</h2>
+          <ul className='timeline timeline-vertical xl:timeline-horizontal justify-center'>
+            <li>
+              <hr className='bg-orange-300' />
+              <div className='timeline-start text-lg font-medium text-right xl:text-center'>August 2<sup>nd</sup></div>
+              <div className='timeline-middle'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6'><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" className='fill-orange-300' /></svg>
+              </div>
+              <div className='timeline-end text-lg xl:text-center'>Registration opens</div>
+              <hr className='bg-orange-300' />
+            </li>
+            <li>
+              <hr className='bg-orange-300' />
+              <div className='timeline-start text-lg font-medium text-right xl:text-center'>August 17<sup>th</sup></div>
+              <div className='timeline-middle'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6'><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" className='fill-orange-300' /></svg>
+              </div>
+              <div className='timeline-end text-lg xl:text-center'>Registration closes</div>
+              <hr className='bg-orange-300' />
+            </li>
+            <li>
+              <hr className='bg-orange-300' />
+              <div className='timeline-start text-lg font-medium text-right xl:text-center'>August 23<sup>rd</sup></div>
+              <div className='timeline-middle'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6'><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" className='fill-orange-300' /></svg>
+              </div>
+              <div className='timeline-end text-lg xl:text-center'>Preliminary results<br />announcement</div>
+              <hr className='bg-orange-300' />
+            </li>
+            <li>
+              <hr className='bg-orange-300' />
+              <div className='timeline-start text-lg font-medium text-right xl:text-center'>August 26<sup>th</sup> & 27<sup>th</sup></div>
+              <div className='timeline-middle'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6'><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" className='fill-orange-300' /></svg>
+              </div>
+              <div className='timeline-end text-lg xl:text-center'>Level 1: Virtual Hackathon</div>
+              <hr className='bg-orange-300' />
+            </li>
+            <li>
+              <hr className='bg-orange-300' />
+              <div className='timeline-start text-lg font-medium text-right xl:text-center'>August 31<sup>st</sup></div>
+              <div className='timeline-middle'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6'><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" className='fill-orange-300' /></svg>
+              </div>
+              <div className='timeline-end text-lg xl:text-center'>Level 1 results<br />announcement</div>
+              <hr className='bg-orange-300' />
+            </li>
+            <li>
+              <hr className='bg-orange-300' />
+              <div className='timeline-start text-lg font-medium text-right xl:text-center'>September 2<sup>nd</sup> week (tentative)</div>
+              <div className='timeline-middle'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6'><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" className='fill-orange-300' /></svg>
+              </div>
+              <div className='timeline-end text-lg xl:text-center'>Level 2: Advanced hackathon,<br />final judging & results</div>
+              <hr className='bg-orange-300' />
+            </li>
+          </ul>
+        </div>
+
         <div id="details" className='pt-24 px-16 lg:px-48 text-xl font-light'>
           <h2 className='text-3xl font-medium pb-10'>Details</h2>
           <div className='flex flex-col justify-center items-center gap-6'>
-            <div className='flex flex-col md:flex-row items-center justify-center bg-[#B5DADC] transition-transform rounded-md hover:scale-105 hover:shadow-2xl w-[75vw] p-4 mb-12'>
+            <div className='flex flex-col md:flex-row items-center justify-center bg-[#B5DADC] transition-transform rounded-md w-[75vw] p-4 mb-12'>
               <div className='md:pr-8 md:w-1/3 flex flex-col items-center'>
-                <Image src={el} className='mb-4 w-full h-full object-cover' />
+                <Image src={eligible} className='mb-4 w-full h-full object-cover' />
                 <div className='font-semibold space text-3xl mb-6 text-center'>Eligibility</div>
               </div>
               <ul className='list-disc pl-6 text-xl md:w-2/3'>
@@ -77,9 +136,9 @@ export default function Home() {
                 <li>Anyone with a passion for Agri-tech innovation</li>
               </ul>
             </div>
-            <div className='flex flex-col md:flex-row items-center justify-center bg-[#B5DADC] transition-transform rounded-md hover:scale-105 hover:shadow-2xl mb-12 p-4 w-[75vw]'>
+            <div className='flex flex-col md:flex-row items-center justify-center bg-[#B5DADC] transition-transform rounded-md mb-12 p-4 w-[75vw]'>
               <div className='md:pr-8 md:w-1/3 flex flex-col items-center'>
-                <Image src={dl} className='mb-4 w-full h-full object-cover' />
+                <Image src={work} className='mb-4 w-full h-full object-cover' />
                 <div className='font-semibold space text-3xl mb-6 text-center'>Why participate?</div>
               </div>
               <ul className='text-xl list-disc pl-6 md:w-2/3'>
@@ -95,9 +154,9 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className='flex flex-col md:flex-row items-center justify-center bg-[#B5DADC] transition-transform rounded-md hover:scale-105 hover:shadow-2xl w-[75vw] p-4 mb-12'>
+            <div className='flex flex-col md:flex-row items-center justify-center bg-[#B5DADC] transition-transform rounded-md w-[75vw] p-4 mb-12'>
               <div className='md:pr-8 md:w-1/3 flex flex-col items-center'>
-                <Image src={star} className='mb-4 w-full h-full object-cover' />
+                <Image src={prize} className='mb-4 w-full h-full object-cover' />
                 <div className='font-semibold space text-3xl mb-6 text-center'>Prizes</div>
               </div>
               <ul className='text-xl list-disc pl-6 md:w-2/3'>
@@ -190,17 +249,27 @@ export default function Home() {
           </ol>
         </div>
 
-        {/* footer */}
         <div className="pb-16 pt-8 ">
           <div className='text-2xl m-4 text-center font-medium'>Our Partners</div>
           <div className='flex md:flex-row flex-col flex-wrap justify-evenly items-center space-y-4 p-4'>
-            <Image className='w-4/5 md:w-1/4 h-auto' src={sa} />
-            <Image className='w-2/4 md:w-1/5 h-auto' src={f1} />
-            <Image className='w-4/5 md:w-1/4 h-auto' src={f2} />
+            <Image className='w-4/5 md:w-1/4 h-auto' src={sastra} />
+            <Image className='w-2/4 md:w-1/5 h-auto' src={tnau} />
+            <Image className='w-4/5 md:w-1/4 h-auto' src={tabif} />
           </div>
         </div>
 
         <div className="flex flex-col justify-center items-center text-gray-400 p-8 md:pl-40 md:pr-40 font-light">
+          <div className='flex flex-row justify-center items-center gap-6 pb-4'>
+            {/*<!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->*/}
+            <a href="https://www.facebook.com/profile.php?id=100070585393184" target='_blank'><svg viewBox="0 0 320 512" className='h-6 w-6' pointerEvents='bounding-box'><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" className='fill-gray-400 hover:fill-black' /></svg>
+            </a>
+            <a href="https://twitter.com/ablest_sastra" target='_blank'><svg viewBox="0 0 512 512" className='h-6 w-6' pointerEvents='bounding-box'>
+              <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" className='fill-gray-400 hover:fill-black' /></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/ablest/" target='_blank'><svg viewBox="0 0 448 512" className='h-6 w-6' pointerEvents='bounding-box'><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" className='fill-gray-400 hover:fill-black' /></svg>
+            </a>
+            <a href="https://instagram.com/ablest_sastra" target='_blank'><svg viewBox="0 0 448 512" className='h-6 w-6' pointerEvents='bounding-box'><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" className='fill-gray-400 hover:fill-black' /></svg></a>
+          </div>
           <span>Made by <a href='https://ecellsastra.org' className='font-medium hover:text-grey-700' target='_blank'>Tech-E, E-Cell SASTRA</a>. || &copy; All Rights Reserved 2024</span>
         </div>
       </div>

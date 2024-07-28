@@ -1,6 +1,5 @@
 import { Rubik } from 'next/font/google';
-
-import './globals.css'
+import '../styles/globals.css'
 
 const font = Rubik({
   subsets:['latin'],
