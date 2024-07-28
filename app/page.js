@@ -15,28 +15,28 @@ import f2 from './images/f2.jpg';
 import agritech from './images/agritech.jpg';
 
 export default function Home() {
-  const [open, setopen] = useState(true);
+  const [open, setopen] = useState(false);
   return (
     <>
       <div className='bg-[#F5FFF7] flex flex-col'>
-        <nav className="bg-white shadow-md p-4 s md:flex flex-row justify-between items-center z-40 sm:[20vh] sticky top-0 left-0">
+        <nav className="bg-white shadow-md p-4 s lg:flex flex-row justify-between items-center z-40 sm:[20vh] sticky top-0 left-0">
           <div className="flex flex-row justify-between">
             <Image className='h-16 w-auto' src={tbi} />
-            <span className="md:hidden block cursor-pointer">
+            <span className="lg:hidden block cursor-pointer">
               <button onClick={() => setopen(!open)} >
                 <Image className="w-8" src={ham} />
               </button>
             </span>
           </div>
 
-          <ul className={`transition-all mt-4 ease-in font-medium border-x-2 border-b-2 md:border-none border-green-400 duration-300 ${open ? 'opacity-0 opacity-100' : ''} md:py-0 pt-4 pl-2 md:pl-0 w-full md:w-auto left-0 md:flex flex-row md:items-center z-[-1] md:z-auto md:static absolute md:bg-transparent`}>
-            <li className='mx-4 md:my-0 my-2 pb-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600'><a href="https://ablest.sastra.edu">Home</a></li>
-            <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#about'>About</a></li>
-            <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-green-400 cursor-pointer hover:text-green-600"><a href='#details'>Details</a></li>
-            <li className="mx-4 md:my-0 my-6 pb-2 border-b-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#guidelines'>Guidelines</a></li>
-            <li className="mx-4 md:my-0 my-6 pb-2 md:border-none border-green-300 cursor-pointer hover:text-green-600"><a href='#themes'>Themes</a></li>
-            <li className="mx-4 md:my-0 my-2 pb-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#faq'>FAQs</a></li>
-            <li className='mx-4 md:my-0 my-2 pb-2 md:border-none border-orange-300 cursor-pointer hover:text-orange-600'><a href="https://ablest.sastra.edu/contact.php">Contact Us</a></li>
+          <ul className={`font-medium border-x-2 border-b-2 lg:border-none border-orange-400 ${open ? 'block' : 'hidden'} px-4 lg:p-0 w-full lg:w-auto left-0 lg:flex flex-row lg:items-center lg:static absolute bg-white lg:bg-transparent`}>
+            <li className='mx-4 lg:my-0 my-2 lg:p-0 pb-2 border-b-2 lg:border-none border-orange-300 cursor-pointer hover:text-orange-600'><a href="https://ablest.sastra.edu">Home</a></li>
+            <li className="mx-4 lg:my-0 my-6 lg:p-0 pb-2 border-b-2 lg:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#about'>About</a></li>
+            <li className="mx-4 lg:my-0 my-6 lg:p-0 pb-2 border-b-2 lg:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#details'>Details</a></li>
+            <li className="mx-4 lg:my-0 my-6 lg:p-0 pb-2 border-b-2 lg:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#guidelines'>Guidelines</a></li>
+            <li className="mx-4 lg:my-0 my-6 lg:p-0 pb-2 border-b-2 lg:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#themes'>Themes</a></li>
+            <li className="mx-4 lg:my-0 my-6 lg:p-0 pb-2 border-b-2 lg:border-none border-orange-300 cursor-pointer hover:text-orange-600"><a href='#faq'>FAQs</a></li>
+            <li className='mx-4 lg:my-0 my-6 lg:p-0 pb-2 lg:border-none border-orange-300 cursor-pointer hover:text-orange-600'><a href="https://ablest.sastra.edu/contact.php">Contact Us</a></li>
           </ul>
         </nav>
 
@@ -64,61 +64,53 @@ export default function Home() {
         {/* details */}
         <div id="details" className='pt-24 px-16 lg:px-48 text-xl font-light'>
           <h2 className='text-3xl font-medium pb-10'>Details</h2>
-          <div className='flex lg:flex-row flex-col justify-center items-center gap-6'>
-            <div className='font-normal h-[65vh] md:h-[85vh] xl:h-[70vh] pt-6 pl-4 pr-6 pb-2 relative bg-[#B5DADC] transition-transform rounded-md hover:scale-105 hover:shadow-2xl w-[80vw] lg:w-[25vw] mb-12'>
-              <div className="image mb-4 h-[20vh] w-full grid place-items-center">
-                <Image src={el} className='h-[20vh] w-[25vh]' />
+          <div className='flex flex-col justify-center items-center gap-6'>
+            <div className='flex flex-col md:flex-row items-center justify-center bg-[#B5DADC] transition-transform rounded-md hover:scale-105 hover:shadow-2xl w-[75vw] p-4 mb-12'>
+              <div className='md:pr-8 md:w-1/3 flex flex-col items-center'>
+                <Image src={el} className='mb-4 w-full h-full object-cover' />
+                <div className='font-semibold space text-3xl mb-6 text-center'>Eligibility</div>
               </div>
-              <div className='heading font-bold space text-3xl mb-6 text-center'>Eligibility</div>
-              <div className='content text-xl'>
-                <ul className='list-disc pl-6'>
-                  <li>Students and professionals from all backgrounds (technology, agriculture, business, etc.)</li>
-                  <li>Startups</li>
-                  <li>Researchers and academics</li>
-                  <li>Anyone with a passion for Agri-tech innovation</li>
-                </ul>
-              </div>
+              <ul className='list-disc pl-6 text-xl md:w-2/3'>
+                <li>Students and professionals from all backgrounds (technology, agriculture, business, etc.)</li>
+                <li>Startups</li>
+                <li>Researchers and academics</li>
+                <li>Anyone with a passion for Agri-tech innovation</li>
+              </ul>
             </div>
-            <div className='font-normal h-[75vh] md:h-[85vh] xl:h-[70vh] card pt-6 pl-4 pr-6 pb-2 relative bg-[#B5DADC] transition-transform rounded-md hover:scale-105 hover:shadow-2xl w-[80vw] lg:w-[25vw] mb-12'>
-              <div className="image mb-4 h-[20vh] w-full grid place-items-center">
-                <Image src={dl} className='h-[20vh] w-[25vh]' />
+            <div className='flex flex-col md:flex-row items-center justify-center bg-[#B5DADC] transition-transform rounded-md hover:scale-105 hover:shadow-2xl mb-12 p-4 w-[75vw]'>
+              <div className='md:pr-8 md:w-1/3 flex flex-col items-center'>
+                <Image src={dl} className='mb-4 w-full h-full object-cover' />
+                <div className='font-semibold space text-3xl mb-6 text-center'>Why participate?</div>
               </div>
-              <div className='heading font-bold space text-3xl mb-6 text-center'>Why participate?</div>
-              <div className='content text-xl'>
-                <ul className=' list-disc text-left pl-6'>
-                  <li>
-                    <strong className='font-medium'>Innovate:</strong> Develop and showcase your innovative solutions to real-world agricultural problems.
-                  </li>
-                  <li>
-                    <strong className='font-medium'>Collaborate:</strong> Work with like-minded
-                    individuals and mentors
-                  </li>
-                  <li>
-                    <strong className='font-medium'>Transform:</strong> Make a tangible impact on the agricultural sector and help shape the future of farming
-                  </li>
-                </ul>
-              </div>
+              <ul className='text-xl list-disc pl-6 md:w-2/3'>
+                <li>
+                  <strong className='font-medium'>Innovate:</strong> Develop and showcase your innovative solutions to real-world agricultural problems.
+                </li>
+                <li>
+                  <strong className='font-medium'>Collaborate:</strong> Work with like-minded
+                  individuals and mentors
+                </li>
+                <li>
+                  <strong className='font-medium'>Transform:</strong> Make a tangible impact on the agricultural sector and help shape the future of farming
+                </li>
+              </ul>
             </div>
-            <div className='font-normal h-[70vh] md:h-[85vh] xl:h-[70vh] card text-center pt-6 pl-4 pr-6 pb-2 bg-[#B5DADC] transition-transform rounded-md hover:scale-105 hover:shadow-2xl w-[80vw] lg:w-[25vw] mb-12'>
-              <div className="image mb-4 h-[20vh] w-full grid place-items-center">
-                <Image src={star} className='h-[20vh] w-[25vh]' />
+            <div className='flex flex-col md:flex-row items-center justify-center bg-[#B5DADC] transition-transform rounded-md hover:scale-105 hover:shadow-2xl w-[75vw] p-4 mb-12'>
+              <div className='md:pr-8 md:w-1/3 flex flex-col items-center'>
+                <Image src={star} className='mb-4 w-full h-full object-cover' />
+                <div className='font-semibold space text-3xl mb-6 text-center'>Prizes</div>
               </div>
-              <div className='heading font-bold space text-3xl mb-6 text-center'>Prizes</div>
-              <div className='content text-center text-xl'>
-                <div className='content text-xl'>
-                  <ul className=' list-disc text-left pl-6'>
-                    <li><strong className='font-medium'>Cash Prizes</strong>
-                      <ul>
-                        <li>1<sup>st</sup> prize: ₹5,000</li>
-                        <li>2<sup>nd</sup> prize: ₹3,000</li>
-                        <li>3<sup>rd</sup> prize: ₹2,000</li>
-                      </ul>
-                    </li>
-                    <li>Incubation Support for next <strong>18 months</strong> with Networking Opportunities.</li>
-                    <li><strong>Seed funding</strong> facility for startups with viable solutions.</li>
+              <ul className='text-xl list-disc pl-6 md:w-2/3'>
+                <li><strong className='font-medium'>Cash Prizes</strong>
+                  <ul>
+                    <li>1<sup>st</sup> prize: ₹5,000</li>
+                    <li>2<sup>nd</sup> prize: ₹3,000</li>
+                    <li>3<sup>rd</sup> prize: ₹2,000</li>
                   </ul>
-                </div>
-              </div>
+                </li>
+                <li>Incubation Support for next <strong>18 months</strong> with Networking Opportunities.</li>
+                <li><strong>Seed funding</strong> facility for startups with viable solutions.</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -130,24 +122,24 @@ export default function Home() {
             <li>Each team can have up to <strong>4 members</strong>, including the team leader.</li>
             <li>Members from different branches of the same college/institute are encouraged to form a team.</li>
             <li>Presentation submission Deadline - <strong className='font-medium'>August 17, 2024</strong><br />This PPT will be <strong>reviewed</strong> by the Preliminary Screening and Evaluation Committee.</li>
-            </ul>
+          </ul>
         </div>
 
         <div className='pt-24 px-16 lg:px-48 text-xl font-light'>
-        <h2 className='text-3xl font-medium pb-10'>Abstract submission details</h2>
-        <ul className='list-disc pl-6'>
-        <li>Your solution should address at least one of the challenges announced during the launch of the Agri-Tech Hackathon, focusing on innovation, practicality, and technology.</li>
-                <li>You are requested to submit your solution details in the <a href='https://forms.gle/iwyFnfhB3PasWdqD6' className='font-medium'>form</a> with a maximum of 15 slides.</li>
-                <li>
-                  <b>File format:</b> .ppt/.pptx only<br />
-                  <b>Size:</b> Maximum 9 MB<br />
-                  <b>Duration:</b> Maximum 7 minutes<br />
-                </li>
-                <li>The shortlisted teams will be announced after reviewing the PPT.</li>
-                <li>All communications will be sent through registered email id only.</li>
-                <li>Decisions of the organizing committee/jury will be the final in all rounds.</li>
-                <li>No argument or appeal will be entertained.</li>
-                <li>Participation certificates will be given only to candidates, who qualify in Level-2 Round.</li>
+          <h2 className='text-3xl font-medium pb-10'>Abstract submission details</h2>
+          <ul className='list-disc pl-6'>
+            <li>Your solution should address at least one of the challenges announced during the launch of the Agri-Tech Hackathon, focusing on innovation, practicality, and technology.</li>
+            <li>You are requested to submit your solution details in the <a href='https://forms.gle/iwyFnfhB3PasWdqD6' className='font-medium'>form</a> with a maximum of 15 slides.</li>
+            <li>
+              <b>File format:</b> .ppt/.pptx only<br />
+              <b>Size:</b> Maximum 9 MB<br />
+              <b>Duration:</b> Maximum 7 minutes<br />
+            </li>
+            <li>The shortlisted teams will be announced after reviewing the PPT.</li>
+            <li>All communications will be sent through registered email id only.</li>
+            <li>Decisions of the organizing committee/jury will be the final in all rounds.</li>
+            <li>No argument or appeal will be entertained.</li>
+            <li>Participation certificates will be given only to candidates, who qualify in Level-2 Round.</li>
           </ul>
         </div>
 
