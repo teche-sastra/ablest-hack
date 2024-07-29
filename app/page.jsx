@@ -63,7 +63,7 @@ export default function Home() {
           The agriculture sector is at a crucial juncture, needing to adopt cutting-edge technology to address the challenges posed by a growing global population, climate change, and sustainability. An agri-tech hackathon is a vital event that brings together innovators—technologists, farmers, researchers, and entrepreneurs—to drive advancements in agriculture. By fostering collaboration, this hackathon aims to develop smart farming solutions and build resilient systems that improve food security, resource management, and environmental sustainability. Now is the time for the brightest minds to innovate and shape a more sustainable future for agriculture.
           </div>
           <div className='md:w-1/4'>
-            <ReactPlayer controls={true} url='agri.mp4' width={375} height={250}/>
+            <ReactPlayer controls={true} url='agri2.mp4' width={375} height={250}/>
           </div>
         </div>
 
