@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Video from 'next-video'
-import agri from '../videos/agri.mp4'
+import agri from '../videos/agri2.mp4'
 import ablest from '../images/ablest.png';
 import hamburger from '../images/hamburger.png';
 import agritech from '../images/agritech.jpg';
@@ -62,12 +62,12 @@ export default function Home() {
           The agriculture sector is at a crucial juncture, needing to adopt cutting-edge technology to address the challenges posed by a growing global population, climate change, and sustainability. An agri-tech hackathon is a vital event that brings together innovators—technologists, farmers, researchers, and entrepreneurs—to drive advancements in agriculture. By fostering collaboration, this hackathon aims to develop smart farming solutions and build resilient systems that improve food security, resource management, and environmental sustainability. Now is the time for the brightest minds to innovate and shape a more sustainable future for agriculture.
         </div>
 
-        {/* <div className='w-1/2 flex justify-center items-center'>
+        <div className='w-1/2 flex justify-center items-center'>
             <Video className="w-full" src={agri} />
-        </div> */}
+        </div>
 
         <div className="pt-24 px-16 text-xl font-light">
-          <h2 className='lg:px-32 text-3xl font-medium pb-10'>Timeline</h2>
+          <h2 className='lg:px-32 text-3xl font-medium pb-10'>Timelines</h2>
           <ul className='timeline timeline-vertical xl:timeline-horizontal justify-center'>
             <li className=''>
               <hr className='bg-orange-300' />
@@ -196,7 +196,7 @@ export default function Home() {
           <h2 className='text-3xl font-medium pb-10'>Abstract submission details</h2>
           <ul className='list-disc pl-6'>
             <li>Your solution should address at least one of the challenges announced during the launch of the Agri-Tech Hackathon, focusing on innovation, practicality, and technology.</li>
-            <li>Submit your solution details in the <a href='https://forms.gle/iwyFnfhB3PasWdqD6' className='font-medium'>form</a> of a video voice-over and a PPT presentation with a maximum of 15 slides.</li>
+            <li>Submit your solution details in the form of a video voice-over and a PPT presentation with a maximum of 15 slides.</li>
             <li>
               <b>File format:</b> .ppt/.pptx only<br />
               <b>Size:</b> Maximum 9 MB<br />
