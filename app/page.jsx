@@ -13,7 +13,8 @@ import work from '../images/work.png';
 import prize from '../images/prize.png';
 import sastra from '../images/sastra.jpg';
 import tnau from '../images/tnau.jpg';
-import tabif from '../images/tabif.jpg';
+import tabif from '../images/tabif.jpg'; 
+import flyer from '../images/flyer.jpg' 
 
 export default function Home() {
   const [open, setopen] = useState(false);
@@ -62,8 +63,8 @@ export default function Home() {
           The agriculture sector is at a crucial juncture, needing to adopt cutting-edge technology to address the challenges posed by a growing global population, climate change, and sustainability. An agri-tech hackathon is a vital event that brings together innovators—technologists, farmers, researchers, and entrepreneurs—to drive advancements in agriculture. By fostering collaboration, this hackathon aims to develop smart farming solutions and build resilient systems that improve food security, resource management, and environmental sustainability. Now is the time for the brightest minds to innovate and shape a more sustainable future for agriculture.
         </div>
 
-        <div className='w-1/2 flex justify-center items-center'>
-            <Video className="w-full" src={agri} />
+        <div className='w-full my-4 px-1 flex justify-center items-center'>
+            <Image className="md:w-1/2" src={flyer} />
         </div>
 
         <div className="pt-24 px-16 text-xl font-light">
