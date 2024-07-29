@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-
+import Video from 'next-video'
+import agri from '../videos/agri.mp4'
 import ablest from '../images/ablest.png';
 import hamburger from '../images/hamburger.png';
 import agritech from '../images/agritech.jpg';
@@ -61,16 +62,20 @@ export default function Home() {
           The agriculture sector is at a crucial juncture, needing to adopt cutting-edge technology to address the challenges posed by a growing global population, climate change, and sustainability. An agri-tech hackathon is a vital event that brings together innovators—technologists, farmers, researchers, and entrepreneurs—to drive advancements in agriculture. By fostering collaboration, this hackathon aims to develop smart farming solutions and build resilient systems that improve food security, resource management, and environmental sustainability. Now is the time for the brightest minds to innovate and shape a more sustainable future for agriculture.
         </div>
 
+        {/* <div className='w-1/2 flex justify-center items-center'>
+            <Video className="w-full" src={agri} />
+        </div> */}
+
         <div className="pt-24 px-16 text-xl font-light">
           <h2 className='lg:px-32 text-3xl font-medium pb-10'>Timeline</h2>
           <ul className='timeline timeline-vertical xl:timeline-horizontal justify-center'>
-            <li>
+            <li className=''>
               <hr className='bg-orange-300' />
               <div className='timeline-start text-lg font-medium text-right xl:text-center'>August 2<sup>nd</sup></div>
               <div className='timeline-middle'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6'><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" className='fill-orange-300' /></svg>
               </div>
-              <div className='timeline-end text-lg xl:text-center'>Registration opens</div>
+              <div className='timeline-end text-lg xl:text-center py-2 md:px-4'>Registration<br></br> opens</div>
               <hr className='bg-orange-300' />
             </li>
             <li>
@@ -79,7 +84,7 @@ export default function Home() {
               <div className='timeline-middle'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6'><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" className='fill-orange-300' /></svg>
               </div>
-              <div className='timeline-end text-lg xl:text-center'>Registration closes</div>
+              <div className='timeline-end text-lg xl:text-center py-2 md:px-4'>Registration<br></br> closes</div>
               <hr className='bg-orange-300' />
             </li>
             <li>
@@ -88,7 +93,7 @@ export default function Home() {
               <div className='timeline-middle'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6'><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" className='fill-orange-300' /></svg>
               </div>
-              <div className='timeline-end text-lg xl:text-center'>Preliminary results<br />announcement</div>
+              <div className='timeline-end text-lg xl:text-center py-2 md:px-4'>Preliminary results<br />announcement</div>
               <hr className='bg-orange-300' />
             </li>
             <li>
@@ -97,7 +102,7 @@ export default function Home() {
               <div className='timeline-middle'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6'><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" className='fill-orange-300' /></svg>
               </div>
-              <div className='timeline-end text-lg xl:text-center'>Level 1: Virtual Hackathon</div>
+              <div className='timeline-end text-lg xl:text-center py-2 md:px-4'>Level 1: Virtual<br></br> Hackathon</div>
               <hr className='bg-orange-300' />
             </li>
             <li>
@@ -106,16 +111,16 @@ export default function Home() {
               <div className='timeline-middle'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6'><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" className='fill-orange-300' /></svg>
               </div>
-              <div className='timeline-end text-lg xl:text-center'>Level 1 results<br />announcement</div>
+              <div className='timeline-end text-lg xl:text-center py-2 md:px-4'>Level 1: results<br />announcement</div>
               <hr className='bg-orange-300' />
             </li>
             <li>
               <hr className='bg-orange-300' />
-              <div className='timeline-start text-lg font-medium text-right xl:text-center'>September 2<sup>nd</sup> week (tentative)</div>
+              <div className='timeline-start text-lg font-medium text-right xl:text-center'>September 2<sup>nd</sup> week<br></br> (tentative)</div>
               <div className='timeline-middle'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6'><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" className='fill-orange-300' /></svg>
               </div>
-              <div className='timeline-end text-lg xl:text-center'>Level 2: Advanced hackathon,<br />final judging & results</div>
+              <div className='timeline-end text-lg xl:text-center py-2 md:px-4'>Level 2: Advanced<br></br> hackathon,final <br></br>judging & results</div>
               <hr className='bg-orange-300' />
             </li>
           </ul>
@@ -180,7 +185,10 @@ export default function Home() {
             <li>Registration is <strong>mandatory.</strong></li>
             <li>Each team can have up to <strong>4 members</strong>, including the team leader.</li>
             <li>Members from different branches of the same college/institute are encouraged to form a team.</li>
-            <li>Presentation submission Deadline - <strong className='font-medium'>August 17, 2024</strong><br />This PPT will be <strong>reviewed</strong> by the Preliminary Screening and Evaluation Committee.</li>
+            <li>The submission deadline for the video voice-over of your challenge solution and the PowerPoint presentation is <strong>August 17, 2024</strong>.
+            </li>
+            <li>The video voice-over and PPT will be reviewed by the Preliminary Screening and Evaluation Committee.
+            </li>
           </ul>
         </div>
 
@@ -188,13 +196,20 @@ export default function Home() {
           <h2 className='text-3xl font-medium pb-10'>Abstract submission details</h2>
           <ul className='list-disc pl-6'>
             <li>Your solution should address at least one of the challenges announced during the launch of the Agri-Tech Hackathon, focusing on innovation, practicality, and technology.</li>
-            <li>You are requested to submit your solution details in the <a href='https://forms.gle/iwyFnfhB3PasWdqD6' className='font-medium'>form</a> with a maximum of 15 slides.</li>
+            <li>Submit your solution details in the <a href='https://forms.gle/iwyFnfhB3PasWdqD6' className='font-medium'>form</a> of a video voice-over and a PPT presentation with a maximum of 15 slides.</li>
             <li>
               <b>File format:</b> .ppt/.pptx only<br />
               <b>Size:</b> Maximum 9 MB<br />
-              <b>Duration:</b> Maximum 7 minutes<br />
+              <b>Duration of Video Voice-Over:</b> Maximum 5 minutes<br />
             </li>
-            <li>The shortlisted teams will be announced after reviewing the PPT.</li>
+          </ul>
+        </div>
+
+        <div className='pt-24 px-16 lg:px-48 text-xl font-light'>
+          <h2 className='text-3xl font-medium pb-10'>Additional Infromation</h2>
+          <ul className='list-disc pl-6'>
+            <li>The shortlisted teams will be announced after the review of the video voice-over and PPT.
+            </li>
             <li>All communications will be sent through registered email id only.</li>
             <li>Decisions of the organizing committee/jury will be the final in all rounds.</li>
             <li>No argument or appeal will be entertained.</li>
