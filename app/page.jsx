@@ -2,8 +2,6 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import Video from 'next-video'
-import agri from '../videos/agri2.mp4'
 import ablest from '../images/ablest.png';
 import hamburger from '../images/hamburger.png';
 import agritech from '../images/agritech.jpg';
@@ -15,12 +13,13 @@ import sastra from '../images/sastra.jpg';
 import tnau from '../images/tnau.jpg';
 import tabif from '../images/tabif.jpg'; 
 import flyer from '../images/flyer.jpg' 
+import ReactPlayer from 'react-player';
 
 export default function Home() {
   const [open, setopen] = useState(false);
   return (
     <>
-      <div className='bg-[#F5FFF7] flex flex-col'>
+      <div className='bg-[#F5FFF7] flex flex-col overflow-x-hidden'>
         <nav className="bg-white shadow-md p-4 s lg:flex flex-row justify-between items-center z-40 sm:[20vh] sticky top-0 left-0">
           <div className="flex flex-row justify-between">
             <Image className='h-8 md:h-16 w-auto' src={ablest} />
@@ -51,19 +50,24 @@ export default function Home() {
                 <div className='md:text-6xl md:text-left text-center lg:text-6xl text-3xl md:mx-0 mx-4 font-medium text-white mt-12'>Agri-Tech Hackathon 2024</div>
                 <div className='md:text-3xl text-white text-xl text-center md:text-left md:mx-0 mx-4 font-light'>Uniting innovative thinkers nationwide to create groundbreaking solutions for the critical challenges in today's agricultural landscape.</div>
                 <div className='md:py-4 py-4 md:ml-0 ml- flex md:justify-start justify-center'>
-                  <a className='px-4 mb-20 md:px-6 lg:px-8 p-2 rounded-xl flex text-xl md:text-xl flex-row justify-center items-center space-x-2 font-medium hover:bg-green-300 bg-green-500' href='https://forms.gle/iwyFnfhB3PasWdqD6'><span>Register</span> <Image className='w-4' src={arrow} /></a>
+                  <a className='px-4 mb-20 md:px-6 ltg:px-8 p-2 rounded-xl flex text-xl md:text-xl flex-row justify-center items-center space-x-2 font-medium hover:bg-green-300 bg-green-500' href='https://forms.gle/iwyFnfhB3PasWdqD6'><span>Register</span> <Image className='w-4' src={arrow} /></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div id="about" className='mt-[85vh] pt-24 px-16 lg:px-48 text-xl font-light'>
+        <div id="about" className='mt-[85vh] pt-24 px-16 flex flex-col md:flex-row justify-center items-center lg:px-48 text-xl font-light'>
+          <div className='md:w-3/4'>
           <h2 className='text-3xl font-medium pb-10'>About</h2>
           The agriculture sector is at a crucial juncture, needing to adopt cutting-edge technology to address the challenges posed by a growing global population, climate change, and sustainability. An agri-tech hackathon is a vital event that brings together innovators—technologists, farmers, researchers, and entrepreneurs—to drive advancements in agriculture. By fostering collaboration, this hackathon aims to develop smart farming solutions and build resilient systems that improve food security, resource management, and environmental sustainability. Now is the time for the brightest minds to innovate and shape a more sustainable future for agriculture.
+          </div>
+          <div className='md:w-1/4'>
+            <ReactPlayer controls={true} url='agri.mp4' width={375} height={250}/>
+          </div>
         </div>
 
-        <div className='w-full my-4 px-1 flex justify-center items-center'>
+        <div className='w-full my-12 md:my-24 px-1 flex flex-col gap-4 justify-center items-center'>
             <Image className="md:w-1/2" src={flyer} />
         </div>
 
