@@ -15,8 +15,74 @@ import tabif from '../images/tabif.jpg';
 import flyer from '../images/flyer.jpg' 
 import ReactPlayer from 'react-player';
 
+const sections = [
+  {
+    title: "Sodic Soil and Saline Water Management",
+    items: [
+      "Sodic and Saline soil reclamation solution - Phyto-assisted technologies / better Gypsum dissolution technology/ any other methodology",
+      "A cost-effective intervention for saline water usage for crop production in Tamil Nadu, optimal mixing of saline and fresh water to reduce EC and ESP in drip and fertigation system",
+      "A portable, user-friendly tool for rapid field-level diagnosis of soil sodicity and salinity using existing ion-selective membrane electrode / any other methodology to measure Exchangeable Sodium Percentage (ESP) levels",
+      "The life enhancement of the building construction under sodic soil",
+      "Salt extraction from Salicornia species abundantly available in the coastal ecosystem and to meet Indian consumer preference"
+    ]
+  },
+  {
+    title: "Food Industry (Value added products/ Improvement in processing)",
+    items: [
+      "Develop a cost-effective Vinca rosea-based products (nano-emulsions, natural dyes, antimicrobial wound dressings, and anti-helminthic formulations)",
+      "Increase shelf life/ Value added products/edibles (Shallot onions/ Betel Vine/ Small millet flours/ Sugar cane juice/ Idly batter without refrigeration / Palmyra)",
+      "Millet based Parotta mix without adding additives/chemicals",
+      "Develop an automated plate grinder/pulveriser system that minimizes temperature increase and optimizes grinding efficiency through dynamic plate gap adjustment, ensuring high-quality small millet flour production",
+      "Cost effective cleaning/grading machines for Sesame",
+      "Rice based resistant starch products for mass consumption",
+      "Increase the stability and recovery rate of natural dyes for textile and food industry from fruit waste/ Forest litters/ TNEB pruning / monsoon tree breaks/ any specific crops"
+    ]
+  },
+  {
+    title: "Farm Mechanization",
+    items: [
+      "Cost-effective farm level tools/Mimics to overcome Birds/Animal damages in the field",
+      "Robotic harvest for Tree crops (Coconut/ Palm)",
+      "Minimize tannin content while extracting coconut water from tender coconut upon opening to prevent astringency and preserve its natural taste and quality",
+      "Commercial farm level tools for harvesting flower in flower crops like Jasmine, Arali",
+      "Devices for easing emasculation and pollination in pulses, groundnut, small millets",
+      "Customized controls of Automated Hydroponics / Soil less media in Green houses",
+      "Hydrogen synthesis from biological wastes"
+    ]
+  },
+  {
+    title: "Export industry related problems",
+    items: [
+      "Detection methods for pesticide, mycotoxins, metabolites in food (Eg., curcumin in Turmeric), to minimize contamination and ensure the safety of food processing units and marketing",
+      "Infestation control in all packed flour (non-chemical based)",
+      "Plant based fumigants / alternate to chemical fumigants (Aluminium phosphate, Methyl bromide) for pest management in warehouses",
+      "Quick detection system/ nano-stickers/ nano-sensors for pesticide residue/ product expiry/ for any specific consumers product selection in fruits and vegetables",
+      "Commercial IoT enabled system for real time monitoring and management of, Weevil in mango export and rodent management in godown warehouses"
+    ]
+  },
+  {
+    title: "Issues to Resolve Challenges Faced by Differently Abled",
+    items: [
+      "Efficient and cost-effective scribe for organizing exams for vision/ partial vision students",
+      "Develop affordable, wearable assistive technologies, including FM systems and sound-detecting wearables, to enhance inclusivity and independence for individuals with hearing impairments",
+      "Design and develop adaptive farm tools and systems for farm and post-harvest operations to assist mobility-impaired individuals",
+      "Design and develop a cost-effective, customizable, and user-friendly system to assist individuals with mobility impairments in climbing stairs, adaptable for varying numbers of floors"
+    ]
+  },
+  {
+    title: "Other Issues",
+    items: [
+      "Development of Credit rating score for Farmers Like CIBIL Score for PAN Card holders to get credit from commercial banks",
+      "Detection of availability of live cells from age-old trees to propagate and preserve Sthalaviruksha’s in temples",
+      "DNA extraction method/system from dried plant specimen",
+      "High throughput phenotyping using drones/AI technology"
+    ]
+  }
+];
+
 export default function Home() {
   const [open, setopen] = useState(false);
+
   return (
     <>
       <div className='bg-[#F5FFF7] flex flex-col overflow-x-hidden'>
@@ -63,7 +129,7 @@ export default function Home() {
           The agriculture sector is at a crucial juncture, needing to adopt cutting-edge technology to address the challenges posed by a growing global population, climate change, and sustainability. An agri-tech hackathon is a vital event that brings together innovators—technologists, farmers, researchers, and entrepreneurs—to drive advancements in agriculture. By fostering collaboration, this hackathon aims to develop smart farming solutions and build resilient systems that improve food security, resource management, and environmental sustainability. Now is the time for the brightest minds to innovate and shape a more sustainable future for agriculture.
           </div>
           <div className='md:w-1/4'>
-            <ReactPlayer controls={true} url='agri2.mp4' width={375} height={250}/>
+            <ReactPlayer controls={true} url='agri3.mp4' width={375} height={250}/>
           </div>
         </div>
 
@@ -172,9 +238,9 @@ export default function Home() {
               <ul className='text-xl list-disc pl-6 md:w-2/3'>
                 <li><strong className='font-medium'>Cash Prizes</strong>
                   <ul>
-                    <li>1<sup>st</sup> prize: ₹5,000</li>
-                    <li>2<sup>nd</sup> prize: ₹3,000</li>
-                    <li>3<sup>rd</sup> prize: ₹2,000</li>
+                    <li>1<sup>st</sup> prize: ₹10,000</li>
+                    <li>2<sup>nd</sup> prize: ₹6,000</li>
+                    <li>3<sup>rd</sup> prize: ₹4,000</li>
                   </ul>
                 </li>
                 <li>Incubation Support for next <strong>18 months</strong> with Networking Opportunities.</li>
@@ -224,14 +290,18 @@ export default function Home() {
 
         <div id="themes" className='pt-24 px-16 lg:px-48 text-xl font-light'>
           <h2 className='text-3xl font-medium pb-10'>Challenges Themes</h2>
-          <ol className='list-decimal pl-6'>
-            <li>Sodic Soil and Saline Water Management</li>
-            <li>Value Additions in Food Products (specific to processing techniques)</li>
-            <li>Farm Mechanization</li>
-            <li>Issues to Resolve Challenges Faced by Differently Abled</li>
-            <li>Climate Smart Agriculture</li>
-            <li>Other Areas Related to Agriculture (if any)</li>
-          </ol>
+          <div className="container mx-auto p-4">
+      {sections.map((section, index) => (
+        <div key={index} className="mb-8">
+          <h2 className="text-xl font-bold mb-4">{index+1}-{section.title}</h2>
+          <ul className="list-disc list-inside">
+            {section.items.map((item, index) => (
+              <li key={index} className="mb-2">{item}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
         </div>
 
         <div id="faq" className='pt-24 px-16 lg:px-48 text-xl font-light'>
