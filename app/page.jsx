@@ -151,7 +151,7 @@ export default function Home() {
             </li>
             <li>
               <hr className='bg-orange-300' />
-              <div className='timeline-start text-lg font-medium text-right xl:text-center'>August 17<sup>th</sup></div>
+              <div className='timeline-start text-lg font-medium text-right xl:text-center'>August 30<sup>th</sup></div>
               <div className='timeline-middle'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6'><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" className='fill-orange-300' /></svg>
               </div>
@@ -160,7 +160,7 @@ export default function Home() {
             </li>
             <li>
               <hr className='bg-orange-300' />
-              <div className='timeline-start text-lg font-medium text-right xl:text-center'>August 23<sup>rd</sup></div>
+              <div className='timeline-start text-lg font-medium text-right xl:text-center'>September 7<sup>th</sup></div>
               <div className='timeline-middle'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6'><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" className='fill-orange-300' /></svg>
               </div>
@@ -169,7 +169,7 @@ export default function Home() {
             </li>
             <li>
               <hr className='bg-orange-300' />
-              <div className='timeline-start text-lg font-medium text-right xl:text-center'>August 26<sup>th</sup> & 27<sup>th</sup></div>
+              <div className='timeline-start text-lg font-medium text-right xl:text-center'>September 16<sup>th</sup> & 17<sup>th</sup></div>
               <div className='timeline-middle'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6'><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" className='fill-orange-300' /></svg>
               </div>
@@ -178,7 +178,7 @@ export default function Home() {
             </li>
             <li>
               <hr className='bg-orange-300' />
-              <div className='timeline-start text-lg font-medium text-right xl:text-center'>August 31<sup>st</sup></div>
+              <div className='timeline-start text-lg font-medium text-right xl:text-center'>September 20<sup>th</sup></div>
               <div className='timeline-middle'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6'><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" className='fill-orange-300' /></svg>
               </div>
@@ -187,7 +187,7 @@ export default function Home() {
             </li>
             <li>
               <hr className='bg-orange-300' />
-              <div className='timeline-start text-lg font-medium text-right xl:text-center'>September 2<sup>nd</sup> week<br></br> (tentative)</div>
+              <div className='timeline-start text-lg font-medium text-right xl:text-center'>September 4<sup>th</sup> week<br></br> (tentative)</div>
               <div className='timeline-middle'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6'><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" className='fill-orange-300' /></svg>
               </div>
