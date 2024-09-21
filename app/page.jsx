@@ -177,7 +177,7 @@ export default function Home() {
             </li>
             <li>
               <hr className='bg-orange-300' />
-              <div className='timeline-start text-lg font-medium text-right xl:text-center'>October 12th<sup>th</sup></div>
+              <div className='timeline-start text-lg font-medium text-right xl:text-center'>October 12<sup>th</sup></div>
               <div className='timeline-middle'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6'><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" className='fill-orange-300' /></svg>
               </div>
