@@ -186,7 +186,16 @@ export default function Home() {
             </li>
             <li>
               <hr className='bg-orange-300' />
-              <div className='timeline-start text-lg font-medium text-right xl:text-center'>October 3<sup>rd</sup> week<br></br> (tentative)</div>
+              <div className='timeline-start text-lg font-medium text-right xl:text-center'>January 31<sup>st</sup> &<br />February 1<sup>st</sup></div>
+              <div className='timeline-middle'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6'><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" className='fill-orange-300' /></svg>
+              </div>
+              <div className='timeline-end text-lg xl:text-center py-2 md:px-4'>Level 2: Boot camp</div>
+              <hr className='bg-orange-300' />
+            </li>
+            <li>
+              <hr className='bg-orange-300' />
+              <div className='timeline-start text-lg font-medium text-right xl:text-center'>February 8<sup>th</sup></div>
               <div className='timeline-middle'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6'><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" className='fill-orange-300' /></svg>
               </div>
@@ -309,7 +318,7 @@ export default function Home() {
             <li>
               <strong className='font-medium'>How does it work?</strong><br />
               During the Agritech Hackathon 2024 launch on August 2, 2024, specific problem statements will be provided. Teams or individuals of up to 4 people can apply. Once the problem statements are given, teams will have 15 days to submit their proposed solutions, which should include a proof of concept or prototype.<br />
-              Selected participants will be invited to SASTRA Deemed University in Thanjavur for the boot camp (Level-2) event, tentatively planned for September 2024.
+              Selected participants will be invited to SASTRA Deemed University in Thanjavur for the boot camp (Level-2) event.
             </li>
             <li>
               <strong className='font-medium'>What is the deadline to register and submit solutions?</strong><br />
