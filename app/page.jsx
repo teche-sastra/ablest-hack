@@ -118,7 +118,7 @@ export default function Home() {
                 <div className='md:text-6xl md:text-left text-center lg:text-6xl text-3xl md:mx-0 mx-4 font-medium text-white mt-12'>Agri-Tech Hackathon 2025</div>
                 <div className='md:text-3xl text-white text-xl text-center md:text-left md:mx-0 mx-4 font-light'>Uniting innovative thinkers nationwide to create groundbreaking solutions for the critical challenges in today's agricultural landscape.</div>
                 <div className='md:py-4 py-4 md:ml-0 ml- flex md:justify-start justify-center'>
-                  <a className='px-4 mb-20 md:px-6 ltg:px-8 p-2 rounded-xl flex text-xl md:text-xl flex-row justify-center items-center space-x-2 font-medium hover:bg-green-300 bg-green-500' href='https://forms.gle/iwyFnfhB3PasWdqD6'><span>Register</span> <Image className='w-4' src={arrow} /></a>
+                  <a className='px-4 mb-20 md:px-6 ltg:px-8 p-2 rounded-xl flex text-xl md:text-xl flex-row justify-center items-center space-x-2 font-medium hover:bg-green-300 bg-green-500' href='#timeline'><span>View timeline</span> <Image className='w-4' src={arrow} /></a>
                 </div>
               </div>
             </div>
@@ -139,8 +139,8 @@ export default function Home() {
             <Image className="md:w-1/2" src={flyer} />
         </div>
 
-        <div className="pt-24 px-16 text-xl font-light">
-          <h2 className='lg:px-32 text-3xl font-medium pb-10'>Timelines</h2>
+        <div id="timeline" className="pt-24 px-16 text-xl font-light">
+          <h2 className='lg:px-32 text-3xl font-medium pb-10'>Timeline</h2>
           <ul className='timeline timeline-vertical xl:timeline-horizontal justify-center'>
             <li className=''>
               <hr className='bg-orange-300' />
@@ -258,6 +258,28 @@ export default function Home() {
                 <li>Incubation Support for next <strong>18 months</strong> with Networking Opportunities.</li>
                 <li><strong>Seed funding</strong> facility for startups with viable solutions.</li>
               </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="selection-proc" className="pt-24 px-16 lg:px-48 text-xl font-light">
+          <h2 className='text-3xl text-center font-medium pb-10'>Selection process</h2>
+          <div className="w-full flex items-center justify-center">
+            <div className="gap-4 sm:gap-0 sm:w-[60vw] flex flex-col items-center justify-center">
+              <div className="w-full flex flex-row items-center justify-center gap-4">
+                <div className="sm:flex-1 sm:h-[100px] sm:trape-1 sm:bg-[#B5DADC]"></div>
+                <div className="flex-1 text-center sm:text-left"><strong>14 teams</strong> present their solutions to jury members in Level - 2</div>
+              </div>
+              <svg className="sm:hidden h-[100px] fill-[#D9CAA8]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">{/*<!-- Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->*/}<path d="M169.4 502.6c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 402.7 224 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 370.7L86.6 329.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128z"/></svg>
+              <div className="w-full flex flex-row items-center justify-center gap-4">
+                <div className="sm:flex-1 sm:h-[100px] sm:trape-2 sm:bg-[#D9CAA8]"></div>
+                <div className="flex-1 text-center sm:text-left"><strong>5 teams</strong> shortlisted for final round will present to the final jury panel</div>
+              </div>
+              <svg className="sm:hidden h-[100px] fill-[#D9CAA8]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">{/*<!-- Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->*/}<path d="M169.4 502.6c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 402.7 224 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 370.7L86.6 329.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128z"/></svg>
+              <div className="w-full flex flex-row items-center justify-center gap-4">
+                <div className="sm:flex-1 sm:h-[100px] sm:trape-3 sm:bg-orange-300"></div>
+                <div className="flex-1 text-center sm:text-left"><strong>3 teams</strong> chosen as <strong>winners</strong></div>
+              </div>
             </div>
           </div>
         </div>
