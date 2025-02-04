@@ -10,7 +10,10 @@ import work from '../images/work.png';
 import prize from '../images/prize.png';
 import sastra from '../images/sastra.jpg';
 import tnau from '../images/tnau.jpg';
-import tabif from '../images/tabif.jpg'; 
+import tabif from '../images/tabif.jpg';
+import startupTn from '../images/sponsors/startup-tn.jpeg';
+import iob from '../images/sponsors/iob.jpeg';
+import nahep from '../images/sponsors/nahep.jpeg';
 import flyer from '../images/flyer.jpg' 
 import ReactPlayer from 'react-player';
 
@@ -112,7 +115,7 @@ export default function Home() {
           <div className={`flex justify-center item-center flex-col sm:px-4 md:pt-8 md:px-12 pt-52 z-10 h-screen relative`}>
             <div className='flex md:flex-row flex-col justify-center items-center '>
               <div className='md:w-3/4 flex flex-col space-y-4 md:space-y-2 '>
-                <div className='md:text-6xl md:text-left text-center lg:text-6xl text-3xl md:mx-0 mx-4 font-medium text-white mt-12'>Agri-Tech Hackathon 2024</div>
+                <div className='md:text-6xl md:text-left text-center lg:text-6xl text-3xl md:mx-0 mx-4 font-medium text-white mt-12'>Agri-Tech Hackathon 2025</div>
                 <div className='md:text-3xl text-white text-xl text-center md:text-left md:mx-0 mx-4 font-light'>Uniting innovative thinkers nationwide to create groundbreaking solutions for the critical challenges in today's agricultural landscape.</div>
                 <div className='md:py-4 py-4 md:ml-0 ml- flex md:justify-start justify-center'>
                   <a className='px-4 mb-20 md:px-6 ltg:px-8 p-2 rounded-xl flex text-xl md:text-xl flex-row justify-center items-center space-x-2 font-medium hover:bg-green-300 bg-green-500' href='https://forms.gle/iwyFnfhB3PasWdqD6'><span>Register</span> <Image className='w-4' src={arrow} /></a>
@@ -251,6 +254,7 @@ export default function Home() {
                     <li>3<sup>rd</sup> prize: ₹4,000</li>
                   </ul>
                 </li>
+                <li><strong>Free company/IP registration</strong> provided for winning teams.</li>
                 <li>Incubation Support for next <strong>18 months</strong> with Networking Opportunities.</li>
                 <li><strong>Seed funding</strong> facility for startups with viable solutions.</li>
               </ul>
@@ -338,7 +342,7 @@ export default function Home() {
             </li>
             <li>
               <strong className='font-medium'>What should I have?</strong><br />
-              All shortlisted participants need to bring their own laptops for the boot camp (Level-2 Round), which is tentatively planned for September 2024.
+              All shortlisted participants need to bring their own laptops for the boot camp (Level-2 Round), which is on January 31<sup>st</sup> and Februrary 1<sup>st</sup>.
             </li>
             <li>
               <strong className='font-medium'>How do I contact the organizers for any queries?</strong><br />
@@ -356,6 +360,15 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="pb-16 pt-8 ">
+          <div className='text-2xl m-4 text-center font-medium'>Our Sponsors</div>
+          <div className='flex md:flex-row flex-col flex-wrap justify-evenly items-center space-y-4 p-4'>
+            <Image className='w-4/5 md:w-1/4 h-auto' src={startupTn} />
+            <Image className='w-2/4 md:w-1/5 h-auto' src={iob} />
+            <Image className='w-4/5 md:w-1/4 h-auto' src={nahep} />
+          </div>
+        </div>
+
         <div className="flex flex-col justify-center items-center text-gray-400 p-8 md:pl-40 md:pr-40 font-light">
           <div className='flex flex-row justify-center items-center gap-6 pb-4'>
             {/*<!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->*/}
@@ -368,7 +381,7 @@ export default function Home() {
             </a>
             <a href="https://instagram.com/ablest_sastra" target='_blank'><svg viewBox="0 0 448 512" className='h-6 w-6' pointerEvents='bounding-box'><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" className='fill-gray-400 hover:fill-black' /></svg></a>
           </div>
-          <span>Made by <a href='https://ecellsastra.org' className='font-medium hover:text-grey-700' target='_blank'>Tech-E, E-Cell SASTRA</a>. || &copy; All Rights Reserved 2024</span>
+          <span>Made by <a href='https://ecellsastra.org' className='font-medium hover:text-grey-700' target='_blank'>Tech-E, E-Cell SASTRA</a>. || &copy; All Rights Reserved 2025</span>
         </div>
       </div>
     </>
