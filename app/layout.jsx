@@ -7,7 +7,7 @@ const font = Rubik({
 });
 
 export const metadata = {
-  title: 'Agri-Tech Hackathon 2024',
+  title: 'Agri-Tech Hackathon 2025',
   description: "Uniting innovative thinkers nationwide to create groundbreaking solutions for the critical challenges in today's agricultural landscape",
 };
 
