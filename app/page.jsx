@@ -155,11 +155,11 @@ export default function Home() {
         <div id="bootcamp-gallery" className="pt-24 px-16 text-xl font-light">
           <h2 className='lg:px-32 text-3xl text-center font-medium pb-10'>Bootcamp session</h2>
           <div className="flex flex-col items-center justify-center">
-            <div className="carousel rounded-box w-[75vw]">
-              <div className="carousel-item w-[75vw]">
+            <div className="carousel rounded-box md:w-[75vw] w-[90vw]">
+              <div className="carousel-item w-full">
                 <Image id="bootcamp1" src={bootcamp1} />
               </div>
-              <div className="carousel-item w-[75vw]">
+              <div className="carousel-item w-full">
                 <Image id="bootcamp2" src={bootcamp2} />
               </div>
             </div>
