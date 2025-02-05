@@ -1,10 +1,12 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import ablest from '../images/ablest.png';
 import hamburger from '../images/hamburger.png';
 import agritech from '../images/agritech.jpg';
 import arrow from '../images/arrow.png';
+import bootcamp1 from '../images/bootcamp/bootcamp1.jpeg';
+import bootcamp2 from '../images/bootcamp/bootcamp2.jpeg';
 import eligible from '../images/eligible.png';
 import work from '../images/work.png';
 import prize from '../images/prize.png';
@@ -85,6 +87,17 @@ const sections = [
 export default function Home() {
   const [open, setopen] = useState(false);
 
+  useEffect(() => {
+    let current = 1;
+    const CAROUSEL_IMAGE_COUNT = 2;
+    setInterval(() => {
+      current = (current + 1) % CAROUSEL_IMAGE_COUNT;
+      document.querySelector("#bootcamp-gallery .carousel").scrollTo(
+        window.innerWidth * .75 * current, 0
+      );
+    }, 5000);
+  });
+
   return (
     <>
       <div className='bg-[#F5FFF7] flex flex-col overflow-x-hidden'>
@@ -137,6 +150,24 @@ export default function Home() {
 
         <div className='w-full my-12 md:my-24 px-1 flex flex-col gap-4 justify-center items-center'>
             <Image className="md:w-1/2" src={flyer} />
+        </div>
+
+        <div id="bootcamp-gallery" className="pt-24 px-16 text-xl font-light">
+          <h2 className='lg:px-32 text-3xl text-center font-medium pb-10'>Bootcamp session</h2>
+          <div className="flex flex-col items-center justify-center">
+            <div className="carousel rounded-box w-[75vw]">
+              <div className="carousel-item w-[75vw]">
+                <Image id="bootcamp1" src={bootcamp1} />
+              </div>
+              <div className="carousel-item w-[75vw]">
+                <Image id="bootcamp2" src={bootcamp2} />
+              </div>
+            </div>
+            <div className="flex w-full justify-center gap-2 py-2">
+              <a href="#bootcamp1" className="btn btn-xs">1</a>
+              <a href="#bootcamp2" className="btn btn-xs">2</a>
+            </div>
+          </div>
         </div>
 
         <div id="timeline" className="pt-24 px-16 text-xl font-light">
