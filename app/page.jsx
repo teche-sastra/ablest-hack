@@ -15,7 +15,6 @@ import tnau from '../images/tnau.jpg';
 import tabif from '../images/tabif.jpg';
 import startupTn from '../images/sponsors/startup-tn.jpeg';
 import iob from '../images/sponsors/iob.jpeg';
-import nahep from '../images/sponsors/nahep.jpeg';
 import flyer from '../images/flyer.jpg' 
 import ReactPlayer from 'react-player';
 
@@ -229,11 +228,11 @@ export default function Home() {
             </li>
             <li>
               <hr className='bg-orange-300' />
-              <div className='timeline-start text-lg font-medium text-right xl:text-center'>February 8<sup>th</sup></div>
+              <div className='timeline-start text-lg font-medium text-right xl:text-center'>April 12<sup>th</sup></div>
               <div className='timeline-middle'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='h-6 w-6'><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z" className='fill-orange-300' /></svg>
               </div>
-              <div className='timeline-end text-lg xl:text-center py-2 md:px-4'>Level 2: Advanced<br></br> hackathon,final <br></br>judging & results</div>
+              <div className='timeline-end text-lg xl:text-center py-2 md:px-4'>Level 2: Advanced<br></br> hackathon, final <br></br>judging & results</div>
               <hr className='bg-orange-300' />
             </li>
           </ul>
@@ -418,7 +417,6 @@ export default function Home() {
           <div className='flex md:flex-row flex-col flex-wrap justify-evenly items-center space-y-4 p-4'>
             <Image className='w-4/5 md:w-1/4 h-auto' src={startupTn} />
             <Image className='w-2/4 md:w-1/5 h-auto' src={iob} />
-            <Image className='w-4/5 md:w-1/4 h-auto' src={nahep} />
           </div>
         </div>
 
